@@ -13,6 +13,7 @@ Info
 Use
 ---
 Check which version of RVM is in use:
+
 ```rvm -v```
 
 List known Ruby's:
@@ -31,26 +32,39 @@ e.g. rvm use 1.9.2
 ```
 
 Make version of Ruby the default across terminals:
+
 ```rvm use <version> --default```
+
 Note:   this overrides the system level Ruby.
 
 List installed Ruby's:
+
 ```rvm list```
+
 List default Ruby (for new terminals):
+
 ```rvm list default```
 
 Check which version of Ruby is in use:
+
 ```which ruby```
+
+and 
+
+```ruby -v```
 
 Gems
 ----
 Switch to gems directory for current ruby
+
 ```rvm gemdir```
 
 Switch to the system gems directory
+
 ```rvm gemdir system```
 
 Switch to the system user gems directory
+
 ```rvm gemdir system user```
 
 References
