@@ -1,3 +1,7 @@
+Installation
+------------
+Download and install from: http://git-scm.com/
+
 Basics
 ------
 Check git version:
