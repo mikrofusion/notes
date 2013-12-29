@@ -1,3 +1,3 @@
 Notes
 =====
-An attempt to document and organize my programming notes.
+An attempt to organize my programming notes.
