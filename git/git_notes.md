@@ -190,5 +190,7 @@ The recommended workflow for making changes to a repo that multiple people are w
 3.Rebase your branch
 4.Do a pull request (via GitHub).  This is basically requesting the owner of the branch to pull your changes into his/her branch (if they approve of the changes.
 
-
+References
+----------
+https://github.s3.amazonaws.com/media/progit.en.pdf
 
