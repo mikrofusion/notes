@@ -53,7 +53,7 @@ retult in the same output for two reasons:
 Syntax Conventions
 ------------------
 local variables - start with a lowercase
-method params - start with a lowercase, can end with a ?, !, and =
+method params - start with a lowercase, can end with a ?, !, and =.  Note:  ! is usually used at the end of methods that modify the object.
 method names - start with a lowercase or underscore
 
 global variables - start with $
@@ -148,6 +148,101 @@ end
 
 statement modifier
 ```<code to execute> while <condition>```
+
+Closures
+--------
+Ruby has four closure types:
+* blocks, 
+* Procs
+* lambdas
+* Methods
+
+Code Blocks
+-----------
+The following creates code blocks 
+``` 
+{ <code> }
+and 
+do 
+	<code> 
+end
+```
+
+Convention is usually to use ```{}``` for single line blocks and ```do end``` for multi-line blocks.
+
+Code blocks can then be sent to methods via the following:
+
+```
+<method> <code_block>
+e.g.
+array.each { |x| puts x }
+or
+array.each do |x|
+	puts x
+end
+```
+
+The code block will be called via the method using the ```yield``` command.
+
+Procedures
+----------
+Similar to blocks but are reusable.
+
+Declare a proc via the Proc.new command:
+
+```
+square = Proc.new do |n|
+	n ** 2
+end
+```
+
+Procedures can then be passed to a method and the method can call the proc.. like so:
+```
+class Array
+  def iterate!(code)
+    self.each_with_index do |n, i|
+      self[i] = code.call(n)	
+    end
+  end
+end
+# Note, the above method can equally use code blocks by removing code and calling yield in place of code.call
+
+array.iterate!(square)
+```
+
+Notes:  
+* extra variables sent to the Proc will be set to nil.
+* think of them as a block of code being inserted into the method.  a return from a Proc will stop a method and return the value provided.
+
+Lambda
+------
+Similar to Procs but have a few subtle differences:
+* extra variables sent to the lambda will cause Ruby to throw an error.
+* think of them as methods.  return will return their value to the method and let the method continue
+
+```
+e.g.
+def test(code)
+	code.call(1)
+end
+
+test(lambda {|a| puts "printing #{a}" })
+
+	output:  printing 1
+```
+
+Method Objects
+--------------
+Same as a lambda but is a named method.
+
+```
+e.g.
+def square(n)
+	n ** 2
+end
+
+array.iterate(method(:square))
+```
 
 Regular Expressions
 -------------------
