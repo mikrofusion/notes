@@ -244,6 +244,19 @@ end
 array.iterate(method(:square))
 ```
 
+IO
+--
+output:
+```
+puts
+printf
+```
+input:
+```
+gets - returns the next line from std input
+ARGV - array of input from the command line
+```
+
 Regular Expressions
 -------------------
 Ruby supports built in regular expressions using ```/<expression/```
