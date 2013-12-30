@@ -2,7 +2,7 @@ Interactive Ruby
 ----------------
 To run Ruby from the command line run:
 
-```irb```
+``` irb ```
 
 To execute a Ruby file run:
 
@@ -23,28 +23,28 @@ puts 13.odd?
    outputs:  true
 ```
 
-'''
+```
 def hello(name)
 	"hello " + name
 end
 hello("world") 
     outputs:  hello world
-'''
+```
 
 note: 
-'''
+```
 def hello(name)
 	"hello " + name
 end
-'''
+```
 
 and  
 
-'''
+```
 def hello(name)
 	return "hello #{name}"
 end
-'''
+```
 
 retult in the same output for two reasons:
 1.  Ruby automatically returns the result of the last statement in a function.
