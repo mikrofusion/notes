@@ -162,6 +162,11 @@ Create and checkout branch:
 Delete branch:
 ```git checkout -d <branchName>```
 
+Diffing Branches
+----------------
+To get the list of changes between two branches you can run:
+git diff --name-only <branch1> <branch2>
+
 Clearing Changes
 ----------------
 Destroy local modifications
@@ -185,6 +190,12 @@ Note:  checking out without specifying a branch leaves the head detached.  Alter
 Reverting Changes
 -----------------
 TODO ```git revert```
+
+
+
+Merging Changes
+---------------
+TODO:  need to update with merge changes flow.
 
 Collaborative Workflow (GitHub)
 -------------------------------
