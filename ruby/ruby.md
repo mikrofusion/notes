@@ -116,6 +116,7 @@ Symbols allow you to declare constants without predeclaring them.
 Symbols start with a :
 
 ```
+:<name>
 e.g.
 :right
 ```
