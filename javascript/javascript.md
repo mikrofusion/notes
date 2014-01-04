@@ -41,6 +41,7 @@ Backbone.Model.prototype.set.apply(this, arguments);
 
 Prototype Chain
 ---------------
+
 Every object in Javascript has a prototype. When a messages reaches an object, JavaScript will attempt to find a property in that object first, if it cannot find it then the message will be sent to the object’s prototype and so on. This works just like single parent inheritance in a class based language.
 
 Chainable methods

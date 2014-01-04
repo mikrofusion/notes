@@ -1,8 +1,5 @@
-Backbone
-========
-
 Events
-------
+======
 The Backbone Events module is a module that can be mixed in to *any object* in order to provide it with custom events. You may bind with `on` or remove with `off` callback functions to an event; `trigger`-ing an event fires all callbacks in succession.
 
 You can give an object events by extending the Backbone.Events module as follows:
@@ -60,77 +57,4 @@ The Backbone object itself mixes in Events, and can be used to emit any global e
 "route" (route, params) — Fired by the router when any route has been matched.
 "route" (router, route, params) — Fired by history when any route has been matched.
 "all" — this special event fires for any triggered event, passing the event name as the first argument.
-```
-
-Model
------
-Models are the basic data object in the framework -- frequently representing a row in a table in a database on your server.  A discrete chunk of data and a bunch of useful, related methods for performing computations and transformations on that data.
-
-To create a Model class of your own, you extend Backbone.Model and provide instance properties, as well as optional classProperties to be attached directly to the constructor function.
-
-constructor / initialize
-```new Model([attributes], [options])```
-
-Backbone Extend
-----------------
-
-```
-var <model> = Backbone.Model.extend({
-	initialize: function() { ... },
-});
-```
-
-Parse
------
-
-To customize how you parse the data returned from the url you can supply your own parse
-
-```
-	return Backbone.Collection.extend({
-		model: <model>,
-		url: <url>,  
-		parse: function(data) {
-			this.<value> = data.metadata.<value>;
-			return data.data;
-		}
-	});
-```
-
-Sync
-----
-
-To customize your own method to sync with the server you can override the sync method... i.e.:
-
-```
-	Backbone.sync = function(method, model, options) { };
-
-	"create" : expected that you create the model on the server
-	"read"   : expected that you read this model from the server and return it
-	"update" : expected that you update the model on the server with the argument
-	"delete" : expected that you delete the model from the server.
-```
-
-You need to fire either options.success or options.error depending on whether the method succeeded.
-
-If needed, rather than overriding all sync, you should be able to do your customer functions and then 
-```
-	Backbone.sync = function(method, model, options) { 
-		// custom stuff
-		<custom functions>
-			
-		// call base sync
-		Backbone.sync.call(model, method, model, options);
-	};
-```
-
-Overriding A Core Method
-------------------------
-If you override a core method and still want to invoke the parent objects implementation you should exlicitly call it:
-```
-var <model> = Backbone.Model.extend({
-  set: function(attributes, options) {
-    Backbone.Model.prototype.set.apply(this, arguments);
-    ...
-  }
-});
 ```
