@@ -68,10 +68,17 @@ Models are the basic data object in the framework -- frequently representing a r
 
 To create a Model class of your own, you extend Backbone.Model and provide instance properties, as well as optional classProperties to be attached directly to the constructor function.
 
+constructor / initialize
+```new Model([attributes], [options])```
 
 Backbone Extend
 ----------------
 
+```
+var <model> = Backbone.Model.extend({
+	initialize: function() { ... },
+});
+```
 
 Parse
 -----
@@ -114,4 +121,16 @@ If needed, rather than overriding all sync, you should be able to do your custom
 		// call base sync
 		Backbone.sync.call(model, method, model, options);
 	};
+```
+
+Overriding A Core Method
+------------------------
+If you override a core method and still want to invoke the parent objects implementation you should exlicitly call it:
+```
+var <model> = Backbone.Model.extend({
+  set: function(attributes, options) {
+    Backbone.Model.prototype.set.apply(this, arguments);
+    ...
+  }
+});
 ```
