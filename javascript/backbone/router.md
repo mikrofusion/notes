@@ -1,30 +1,53 @@
 Backbone.Router
+===============
 
 Web applications often provide linkable, bookmarkable, shareable URLs for important locations in the app. Until recently, hash fragments (#page) were used to provide these permalinks, but with the arrival of the History API, it's now possible to use standard URLs (/page). Backbone.Router provides methods for routing client-side pages, and connecting them to actions and events. For browsers which don't yet support the History API, the Router handles graceful fallback and transparent translation to the fragment version of the URL.
 
-During page load, after your application has finished creating all of its routers, be sure to call Backbone.history.start(), or Backbone.history.start({pushState: true}) to route the initial URL.
+During page load, after your application has finished creating all of its routers, be sure to call 
+```
+Backbone.history.start()
+or 
+Backbone.history.start({pushState: true})
+``` 
+to route the initial URL.
 
-extendBackbone.Router.extend(properties, [classProperties]) 
-Get started by creating a custom router class. Define actions that are triggered when certain URL fragments are matched, and provide a routes hash that pairs routes to actions. Note that you'll want to avoid using a leading slash in your route definitions:
+extend
+------
 
-var Workspace = Backbone.Router.extend({
+```
+Backbone.Router.extend(properties, [classProperties]) 
+```
+
+Get started by creating a custom router class. Define actions that are triggered when certain URL fragments are matched, and provide a routes hash that pairs routes to actions. 
+
+Note: avoid using a leading slash in your route definitions:
+
+```
+var router = Backbone.Router.extend({
 
   routes: {
-    "help":                 "help",    // #help
-    "search/:query":        "search",  // #search/kiwis
-    "search/:query/p:page": "search"   // #search/kiwis/p7
+    "home":                 "home",    // #help
+    "search/:query":        "search",  // #search/<query>
+    "search/:query/p:index": "search"   // #search/<query>/<index>
   },
 
-  help: function() {
+  home: function() {
     ...
   },
 
-  search: function(query, page) {
+  search: function(query, index) {
     ...
   }
 
 });
-routesrouter.routes 
+```
+
+routes
+------
+```
+router.routes 
+```
+
 The routes hash maps URLs with parameters to functions on your router (or just direct function definitions, if you prefer), similar to the View's events hash. Routes can contain parameter parts, :param, which match a single URL component between slashes; and splat parts *splat, which can match any number of URL components. Part of a route can be made optional by surrounding it in parentheses (/:optional).
 
 For example, a route of "search/:query/p:page" will match a fragment of #search/obama/p2, passing "obama" and "2" to the action.
@@ -37,21 +60,35 @@ Trailing slashes are treated as part of the URL, and (correctly) treated as a un
 
 When the visitor presses the back button, or enters a URL, and a particular route is matched, the name of the action will be fired as an event, so that other objects can listen to the router, and be notified. In the following example, visiting #help/uploading will fire a route:help event from the router.
 
+```
 routes: {
   "help/:page":         "help",
   "download/*path":     "download",
   "folder/:name":       "openFolder",
   "folder/:name-:mode": "openFolder"
 }
+
 router.on("route:help", function(page) {
   ...
 });
-constructor / initializenew Router([options]) 
+```
+
+constructor / initialize
+------------------------
+```
+new Router([options]) 
+```
+
 When creating a new router, you may pass its routes hash directly as an option, if you choose. All options will also be passed to your initialize function, if defined.
 
-routerouter.route(route, name, [callback]) 
+route
+-----
+```
+router.route(route, name, [callback]) 
+```
 Manually create a route for the router, The route argument may be a routing string or regular expression. Each matching capture from the route or regular expression will be passed as an argument to the callback. The name argument will be triggered as a "route:name" event whenever the route is matched. If the callback argument is omitted router[name] will be used instead. Routes added later may override previously declared routes.
 
+```
 initialize: function(options) {
 
   // Matches #page/10, passing "10"
@@ -63,9 +100,12 @@ initialize: function(options) {
 },
 
 open: function(id) { ... }
-navigaterouter.navigate(fragment, [options]) 
+navigaterouter.navigate(fragment, [options])
+```
+
 Whenever you reach a point in your application that you'd like to save as a URL, call navigate in order to update the URL. If you wish to also call the route function, set the trigger option to true. To update the URL without creating an entry in the browser's history, set the replace option to true.
 
+```
 openPage: function(pageNumber) {
   this.document.pages.at(pageNumber).open();
   this.navigate("page/" + pageNumber);
@@ -78,3 +118,4 @@ app.navigate("help/troubleshooting", {trigger: true});
 # Or ...
 
 app.navigate("help/troubleshooting", {trigger: true, replace: true});
+```
