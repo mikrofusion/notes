@@ -1,5 +1,61 @@
+Backbone
+========
+
+Events
+------
+The Backbone Events module is a module that can be mixed in to *any object* in order to provide it with custom events. You may bind with `on` or remove with `off` callback functions to an event; `trigger`-ing an event fires all callbacks in succession.
+
+You can give an object events by extending the Backbone.Events module as follows:
+
+```
+	var object = {};
+	_.extend(object, Backbone.Events);
+```
+
+Methods given by Backbone.Events are:
+
+Bind an event to a `callback` function. Passing `"all"` will bind the callback to all events fired.
+
+```
+	on: function(name, callback, context) 
+```
+Bind an event to only be triggered a single time. After the first time the callback is invoked, it will be removed.
+
+```
+	once: function(name, callback, context)
+```
+
+Remove one or many callbacks. If `context` is null, removes all callbacks with that function. If `callback` is null, removes all callbacks for the event. If `name` is null, removes all bound callbacks for all events.
+
+```
+ 	off: function(name, callback, context)
+```
+
+Trigger one or many events, firing all bound callbacks. Callbacks are passed the same arguments as `trigger` is, apart from the event name (unless you're listening on `"all"`, which will cause your callback to receive the true name of the event as the first argument).
+
+```
+	trigger: function(name)
+```
+
+Tell this object to stop listening to either specific events ... or to every object it's currently listening to.
+    
+```
+    stopListening: function(obj, name, callback)
+```
+
+Model
+-----
 
 
+
+
+
+Backbone Extend
+----------------
+
+
+Parse
+-----
 
 To customize how you parse the data returned from the url you can supply your own parse
 
@@ -13,6 +69,9 @@ To customize how you parse the data returned from the url you can supply your ow
 		}
 	});
 ```
+
+Sync
+----
 
 To customize your own method to sync with the server you can override the sync method... i.e.:
 
