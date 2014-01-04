@@ -66,7 +66,7 @@ Model
 -----
 Models are the basic data object in the framework -- frequently representing a row in a table in a database on your server.  A discrete chunk of data and a bunch of useful, related methods for performing computations and transformations on that data.
 
-
+To create a Model class of your own, you extend Backbone.Model and provide instance properties, as well as optional classProperties to be attached directly to the constructor function.
 
 
 Backbone Extend
