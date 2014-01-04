@@ -187,10 +187,10 @@ var DocumentView = Backbone.View.extend({
 
 });
 ```
-undelegate
-----------
+undelegateEvents
+----------------
 ```
-EventsundelegateEvents() 
+undelegateEvents() 
 ```
 Removes all of the view's delegated events. Useful if you want to disable or remove a view from the DOM temporarily.
 
