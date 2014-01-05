@@ -69,6 +69,13 @@ Nil
 ---
 An object represting nothing (like null).
 
+Numbers
+-------
+You can call methods on numbers, since everything in Ruby is an object.
+```
+0.upto(9) {|i| print i }
+```
+
 Arrays
 ------
 Arrays are indexed collections where the key is an integer.
@@ -86,6 +93,12 @@ a = ["a", "b", "c"]
 ```a = ["a", "b", "c"]```
 can also be written as:
 ```a = %w{a b c}```
+
+```
+e.g.
+numbers = %w{one two three}
+ => ["one", "two", "three"]
+```
 
 Hashes
 ------
@@ -185,6 +198,24 @@ end
 
 The code block will be called via the method using the ```yield``` command.
 
+```
+e.g.
+
+def hello
+	yeild('world')
+end
+
+hello {|who| puts "hello #{who}"}
+
+output:  'hello world'
+```
+
+or
+
+```
+
+```
+
 Procedures
 ----------
 Similar to blocks but are reusable.
@@ -261,3 +292,84 @@ ARGV - array of input from the command line
 Regular Expressions
 -------------------
 Ruby supports built in regular expressions using ```/<expression/```
+
+
+
+Classes
+=======
+
+```
+class <ClassName>
+	def initialize()
+
+	end
+end
+```
+
+You can then instantiate an instance of the object by calling:
+```
+<instance> = new <ClassName>.new
+```
+
+initialize
+----------
+Initialize is the method
+
+accessor methods
+----------------
+Accessor methods allow you to return internal variables owned by the class.
+
+```
+class <Class>
+	@<var>
+	def initalize(<var>) 
+		@<var> = <var>
+	end
+
+	def <var> # assessor method
+		@<var>
+	end
+end
+```
+
+Similar to above, we can write the following to modify an instance variable:
+
+```
+def <var>=(<new_var>) 
+	@<var> = <new_var>
+end
+```
+
+attr_reader and attr_accessor
+-----------------------------
+Alternatively you can use attr_reader to automatically generate the accessor methods:
+
+class <Class>
+	attr_method :<var>    # read.   note the symbol instead of the @<var>
+	attr_accessor :<var>  #write.
+
+	@<var>
+	def initalize(<var>) 
+		@<var> = <var>
+	end
+end
+
+virtual attributes
+------------------
+You can also create getter and setter methods that are not named after the instance variables.  These getters and setters are virtual attributes.
+
+
+Ruby Methods
+============
+puts
+----
+Writes string to output.  Uses to_s on objects to get the string representation.
+
+p
+-
+Writes string to output.  Uses inspect on objects to get string representation.
+
+
+Float
+-----
+give a float representation of an object or throws an error.
