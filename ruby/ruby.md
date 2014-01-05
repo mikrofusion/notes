@@ -100,6 +100,11 @@ numbers = %w{one two three}
  => ["one", "two", "three"]
 ```
 
+adding items to an array can be done via:
+```
+<array> << <item>
+```
+
 Hashes
 ------
 Hashes are indexed collections where the key is an object.
@@ -344,6 +349,7 @@ attr_reader and attr_accessor
 -----------------------------
 Alternatively you can use attr_reader to automatically generate the accessor methods:
 
+```
 class <Class>
 	attr_method :<var>    # read.   note the symbol instead of the @<var>
 	attr_accessor :<var>  #write.
@@ -353,11 +359,79 @@ class <Class>
 		@<var> = <var>
 	end
 end
+```
+
+Attributes
+----------
+Attriutes are methods, but help represent the external state of the object.
 
 virtual attributes
 ------------------
 You can also create getter and setter methods that are not named after the instance variables.  These getters and setters are virtual attributes.
 
+Class Access Control
+====================
+public
+------
+method can be called by anyone
+
+protected
+---------
+can be called by objects of the defining class and its subclasses
+
+private
+-------
+can only be called by the current object
+
+Note:  default level is public.
+
+```
+class <Class>
+
+protected
+	def <method1>
+	end
+private
+	def <method2>
+	end
+public
+	def <method3>
+	end
+end
+
+or
+
+class <Class>
+	public :<method1>
+	protected :<method2>
+	private  :<method3>
+end
+```
+
+Variables
+---------
+Variables are references to objects.
+
+Since variables are just references to an object.  Changing an object pointed to by two variables changes the object for both variables.  (TODO:  not sayign this right.)
+
+To create a copy of an object you can use 
+
+```
+<var>.dup
+```.  
+To cause a runtime error if an object is changed that shouldn't be, call 
+```
+<var>.freeze
+``` 
+
+Adding file dependancies
+========================
+
+require
+-------
+
+require_relative
+-----------------
 
 Ruby Methods
 ============
