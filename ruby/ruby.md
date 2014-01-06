@@ -77,36 +77,78 @@ You can call methods on numbers, since everything in Ruby is an object.
 ```
 
 Arrays
-------
+======
 Arrays are indexed collections where the key is an integer.
 
-Declaring and array:  
-
+Declaring an array  
+------------------
 ```
 <array> = [<obj1>, <obj2>, <obj3>, ...]
 e.g.
 a = ["a", "b", "c"]
 ```
 
+If needed an array can be made to have elements intialize themselves to a certain value if not present (default is nil):
+
+```
+<array> = Array.new(0)  # instead of nil, undefined indexes will be equal to 0
+```
+
 %w is special shortcut for generating an array of strings.
 
-```a = ["a", "b", "c"]```
+```
+a = ["a", "b", "c"]
+```
 can also be written as:
-```a = %w{a b c}```
+```
+a = %w{a b c}
+```
 
 ```
 e.g.
 numbers = %w{one two three}
- => ["one", "two", "three"]
+ 	=> ["one", "two", "three"]
 ```
 
-adding items to an array can be done via:
+indexing items
+--------------
+Items in an array are indexed passing an integer to the [] operator.
+```
+getting:
+<array>[<integer>]
+```
+
+index starts at 0.  if <integer> is negative it returns the value from the end of the array.
+
+```
+e.g.
+
+<array> = [1, 2, 3, 4, 5]
+
+<array>[0] 
+	=> 1
+<array>[4] 
+	=> 5
+<array>[-1] 
+	=> 5
+``` 
+
+You set an array by passing a value to the indexed array via the []= operator;
+
+```
+setting:
+<array>[<integer>] = <val>
+```
+
+adding items
+------------
+adding items to an array can also be done via:
 ```
 <array> << <item>
 ```
 
 Hashes
-------
+======
 Hashes are indexed collections where the key is an object.
 
 ```
