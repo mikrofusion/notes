@@ -524,3 +524,27 @@ Writes string to output.  Uses inspect on objects to get string representation.
 Float
 -----
 give a float representation of an object or throws an error.
+
+
+Testing
+=======
+
+test/unit
+---------
+include into your project by running 
+
+```
+require 'test/unit'
+
+class <Class> < < Test::Unit::TestCase
+	def test_...
+		assert_equal(<one>, <two>)
+	end
+end
+```
+
+
+assert_equal
+------------
+
+
