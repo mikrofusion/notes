@@ -139,12 +139,47 @@ You set an array by passing a value to the indexed array via the []= operator;
 setting:
 <array>[<integer>] = <val>
 ```
+ranges
+------
+you can index an array by range using `..` and `...`.
+
+`<x>..<y>` will get the elements in the array from <x> to <y> inclusive.
+`<x>...<y>` will get the elements in the array from <x> to <y> excluding the last element <y>.
+
+```
+e.g.
+<array> = [1, 2, 3, 4, 5]
+<array>[0..2] 
+	=> [1, 2, 3]
+
+<array>[0...2] 
+	=> [1, 2]	
+```
+
+You can also use 
+
+```
+<array>.first(<n>)
+<array>.last(<n>)
+```
 
 adding items
 ------------
 adding items to an array can also be done via:
 ```
 <array> << <item>
+```
+
+```
+<array>.push	# push element to the end of the array
+<array>.unshift # add item to the beginning of the array
+```
+
+removing items
+--------------
+```
+<array>.pop    # remove last item from the array
+<array>.shift  # remove the first element in the array
 ```
 
 Hashes
