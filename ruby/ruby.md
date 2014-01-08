@@ -495,8 +495,10 @@ To create a copy of an object you can use
 
 ```
 <var>.dup
-```.  
+```
+  
 To cause a runtime error if an object is changed that shouldn't be, call 
+
 ```
 <var>.freeze
 ``` 
