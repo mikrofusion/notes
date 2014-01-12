@@ -30,7 +30,6 @@ end
 
 ```
 group :test, :development do
-	gem 'turn'
 	gem 'rspec-rails'
 	gem 'capybara'
 	gem 'guard-rspec'
@@ -126,4 +125,19 @@ bundle
 to show where your bundled gem is installed.
 ```
 bundle show <gemname>
+```
+
+Routes
+======
+```
+rake routes
+```
+or view in 
+```
+config/routes
+```
+
+can create routes by adding
+```
+:resources tasks to config/routes
 ```

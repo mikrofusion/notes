@@ -1,0 +1,1 @@
+http://railscasts.com/episodes/264-guard
