@@ -197,6 +197,16 @@ Merging Changes
 ---------------
 TODO:  need to update with merge changes flow.
 
+To commit with author date / commiter date modified:
+———————————————————————————————————-----------------
+First, checkout <branch>, add files, then:
+
+```
+GIT_AUTHOR_DATE="Sun Dec 1 21:38:53 2013 -0800" GIT_COMMITTER_DATE="Sun Dec 1 21:38:53 2013 -0800" git commit -m 'commit'
+git checkout master
+git rebase <branch>
+```
+
 Collaborative Workflow (GitHub)
 -------------------------------
 The recommended workflow for making changes to a repo that multiple people are working on is:
