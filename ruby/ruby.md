@@ -50,6 +50,14 @@ retult in the same output for two reasons:
 1.  Ruby automatically returns the result of the last statement in a function.
 2.  Ruby searches double quoted strings and replaces #{expression} with the value of expression.
 
+CONSOLE INPUT
+--------------
+```
+ARGV.each do |<varname>|
+	...
+end
+```
+
 Syntax Conventions
 ------------------
 local variables - start with a lowercase
@@ -292,10 +300,15 @@ hello {|who| puts "hello #{who}"}
 output:  'hello world'
 ```
 
-or
+
 
 ```
+lambda { |params| ... }
+```
+can alternatively be written as such:
 
+```
+-> params { ... }
 ```
 
 Procedures
@@ -446,6 +459,16 @@ virtual attributes
 ------------------
 You can also create getter and setter methods that are not named after the instance variables.  These getters and setters are virtual attributes.
 
+Classes
+========
+```
+class <ClassName>
+	def <methodName>
+		...
+	end
+end
+```
+
 Class Access Control
 ====================
 public
@@ -508,9 +531,11 @@ Adding file dependancies
 
 require
 -------
+loads in from the ruby library
 
 require_relative
 -----------------
+loads in file from the current location
 
 Ruby Methods
 ============
@@ -550,3 +575,67 @@ assert_equal
 ------------
 
 
+=================
+
+lazy enumerators
+----------------
+```
+def Integer.all
+Enumerator.new do |yielder, n: 0|
+loop { yielder.yield(n += 1) } end.lazy
+end
+p Integer.all.first(10)
+produces:
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+
+predicates as free standing procs
+---------------------------------
+```
+multiple_of_three = -> n { (n % 3).zero? }
+palindrome        = -> n { n = n.to_s; n == n.reverse }
+p Integer
+   .all
+   .select(&multiple_of_three)
+   .select(&palindrome)
+   .first(10)
+produces:
+[3, 6, 9, 33, 66, 99, 111, 141, 171, 222]
+
+
+Inheritance
+============
+```
+class <Parent>
+	...
+end
+```
+
+child:
+```
+class <Child> < <Parent>
+	...
+end
+```
+
+namespaces
+====
+```
+module <Module>
+	<variable> = <val>
+	def <method>
+	end
+end
+```
+
+call modules by using:
+
+```
+	<Module>::<conts> # for contants
+	<Module>.<method> # for methods
+```
+
+Mixins
+======
+
+TODO
