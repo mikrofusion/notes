@@ -637,5 +637,116 @@ call modules by using:
 
 Mixins
 ======
+using a module.  cannot have instances, but can be included within a module
 
-TODO
+mixed in modules behave as superclasses.  include modules into classes using the include statement.
+
+```
+module <Module>
+	...
+end
+
+class <Class>
+	include <Module>
+end
+```
+TODO.. look up mixins and variables to keep state
+
+Comparable
+-----------
+```
+class <Class>
+	include Comparable
+	def <=>(other)
+		str.size <=> anOther.str.size
+	end
+	...
+end
+```
+
+Enumerable
+----------
+```
+class <Class>
+	include Comparable
+
+end
+```
+
+Persistable
+----------
+```
+class <Class>
+	include Persistable
+
+end
+```
+
+Numbers
+=======
+integers
+--------
+```
+decimal
+0x hex
+0b binary
+underscores in numbers are ignored
+```
+floats
+------
+```
+0.0
+0.0e<num>
+```
+
+complex and rational
+--------------------
+```
+Complex(<num>, <num)
+```
+```
+Rational(<num>, <num)
+```
+
+conversions
+------------
+```
+```
+
+Convert to integers using
+```
+Integer(<val>)
+```
+and to floats using 
+```
+Float(<val>)
+```
+
+looping with numbers
+---------------------
+```
+<num>.times
+<num>.upto(<num>)
+<num>.downto(<num>)
+<num>.step(<num>, <num>)
+
+strings
+=======
+single quotes
+```
+'' or %q/<string>/
+```
+double quotes
+```
+"" or %Q/<string>/
+```
+
+```/``` can be replaced with any delimiter
+
+A here document consists of lines in the source up to but not including the terminating string that you specify after the << characters. Normally, this terminator must start in column one. However, if you put a minus sign after the << characters, you can indent the terminator:
+
+```
+string = <<-END_OF_STRING
+The body of the string is the input lines up to
+one starting with the same text that followed the '<<' END_OF_STRING
+```
