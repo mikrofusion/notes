@@ -191,6 +191,13 @@ Reverting Changes
 -----------------
 TODO ```git revert```
 
+Rebasing
+--------
+git rebase <branch>
+
+Rename Branch
+-------------
+git branch -m <oldname> <newname>
 
 
 Merging Changes
