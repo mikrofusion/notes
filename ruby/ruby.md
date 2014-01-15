@@ -750,3 +750,67 @@ string = <<-END_OF_STRING
 The body of the string is the input lines up to
 one starting with the same text that followed the '<<' END_OF_STRING
 ```
+
+
+Spaceship Operator
+===================
+```<=>```
+the operator used for comparing opbest.  
+
+```
+def <=>(other)
+	@value <=> other.value
+end
+```
+
+Ranges
+======
+must have a ```succ``` method, which gives the next value.  Allows you to use (<var> .. <var1>)
+
+```
+(1..10) === 5  # true
+```
+
+```
+case <val>
+when 0..2
+	...
+when 2..4
+	...
+else
+	...
+end
+
+Regular Expressions
+===================
+```
+/cat/ 
+Matches "dog and cat" and "catch" but not "Cat" or "c.a.t." 
+
+/123/ 
+Matches "86512312" and "abc123" but not "1.23" 
+
+/t a b/
+Matches "hit a ball" but not "table"
+
+```
+
+The Ruby operator =~ matches a string against a pattern.
+
+```
+<string> =~ pattern
+```
+
+sub
+---
+```
+<instance>.sub(<regex>, <string>)
+```
+
+```
+str = "Dog and Cat"
+new_str = str.sub(/Cat/, "Gerbil")
+puts "Let's go to the #{new_str} for a pint."
+produces:
+Let's go to the Dog and Gerbil for a pint.
+```
