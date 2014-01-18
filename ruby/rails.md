@@ -1,3 +1,90 @@
+
+
+
+
+create raisl project
+--------------------
+rails new first_app   <- note snakecase
+cd first_app
+
+open project directory
+---------------------
+open . 
+
+install gems
+------------
+bundle install
+
+run rails
+---------
+rails server
+
+======================
+go to localhost:3000
+
+
+add to your gitignore
+----------------------
+.DS_STORE
+
+init git
+--------
+git init
+git add .
+git status
+git commit -m "intial commit"
+git log
+
+recover ..
+----------
+git checkout -f
+
+git push -u (git set upstream)
+
+
+
+===============================
+
+workflow
+========
+git checkout -b "modify-README"
+git mv README.rdoc README.md
+git commit -am "improve readme file"
+git checkout master
+git merge modify-README
+git branch -d modify-README
+git push
+
+// note: 
+
+progit.org
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Rails
 =====
 rails -> node comparison
