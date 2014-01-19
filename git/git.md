@@ -176,7 +176,7 @@ or
 git reset --hard <commitId>
 ```
 
-TODO:
+Remove files not checked into get (useful after doing a git reset command)
 ```git clean -f -d```
 
 Advanced Checkout
