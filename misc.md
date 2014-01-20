@@ -11,3 +11,7 @@ Open the system preferences
 Hold down the command and option keys while clicking the display icon
 Next locate the screen adjustments on the external monitor and you will notice now there is an option called "Rotation".
 Choose 90 Degrees and now your monitor is in portrait mode.
+
+
+looks cool.. investigate more..:
+http://brian.io/lawnchair/
