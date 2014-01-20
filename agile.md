@@ -1,4 +1,11 @@
+agile
+=====
 
+scrum
+-----
+
+sprint
+------
 
 
 
@@ -9,3 +16,9 @@ i wish
 we should
 i like
 ```
+
+
+Tools
+-----
+pivital tracker
+jira
