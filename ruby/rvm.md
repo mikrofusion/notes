@@ -70,3 +70,8 @@ Switch to the system user gems directory
 References
 ----------
 https://rvm.io/rvm/basics
+
+
+===================
+
+gem install rails

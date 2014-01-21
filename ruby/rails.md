@@ -2,6 +2,90 @@
 
 
 
+
+
+-----------
+ugg lost beginning of notes here
+------------
+
+
+config/routes.rb
+	resources :users -> sets up correspondences between 
+app/controller/users_controller.rb
+
+	def index 
+		@users = User.all
+
+	end
+
+views/users/index.html.erb
+	<% @users.each do |user| %>
+		<%= user.email %>
+	<% end %>
+
+
+HTTPRequest      URL          Action    Purpose
+GET              /users       index     page to list all users
+GET              /users/1     show      page to show user wiht id 1
+GET              /users/new   new       page to make new user
+POST             /users       create    page to create new user
+GET              /users/1/edit  edit    page to edit user with id 1
+PUT              /users/1       update   update user with id 1
+DELETE           /users/1      destroy  delete user with id 1
+
+rest endpoints in rails:  index, show, new, create, edit, update, destroy
+
+representational state transfer - roy fielding.
+
+========================
+create microposts
+=========================
+rails generate scaffold Micropost content:string user_id:integer
+
+update database
+--------------
+bundle exec rake db:migrate
+
+now we should have:
+
+resources :microposts
+resources :users
+
+app/models/micropost.rb
+	validates :content, :length => { :maximum => 140 }
+	belongs_to :user
+
+app/models/user.rb
+	has_many :microposts
+
+
+
+ActiveRecord <- object relational database mapping
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 create raisl project
 --------------------
 rails new first_app   <- note snakecase
@@ -13,7 +97,9 @@ open .
 
 install gems
 ------------
-bundle install
+bundle update 
+bundle install (--without production) #without production for heroku
+
 
 run rails
 ---------
@@ -67,17 +153,96 @@ progit.org
 
 
 
+=================================================
+book
+=================================================
+once the project is created (see above) then use the following
+
+```
+rails generate scaffold User name:string email:string
+```
+will create the following files:
+```
+Active Record
+-------------
+>> database model creation ... 
+ 	invoke  active_record
+
+>> create an active record migration path... ActiveRecord::Migration
+	create  	db/migrate/20140120192044_create_users.rb
+
+>> create a model that inherits from ActiveRecord::Base
+	create    		app/models/user.rb
+
+>> add test unit cases
+	invoke    		test_unit
+	create      		test/models/user_test.rb
+	create      		test/fixtures/users.yml
+
+Routes
+------
+>> create routes.
+	invoke  resource_route
+	route    	resources :users
+	invoke  scaffold_controller
+	create    	app/controllers/users_controller.rb
+	invoke    	erb
+	create      	app/views/users
+	create      	app/views/users/index.html.erb
+	create      	app/views/users/edit.html.erb
+	create      	app/views/users/show.html.erb
+	create      	app/views/users/new.html.erb
+	create      	app/views/users/_form.html.erb
+	invoke    test_unit
+	create      	test/controllers/users_controller_test.rb
+	invoke    helper
+	create      	app/helpers/users_helper.rb
+	invoke      	test_unit
+	create        		test/helpers/users_helper_test.rb
+	invoke    jbuilder
+	create      	app/views/users/index.json.jbuilder
+	create      	app/views/users/show.json.jbuilder
+	invoke  assets
+	invoke    	coffee
+	create     	 	app/assets/javascripts/users.js.coffee
+	invoke    	scss
+	create      	app/assets/stylesheets/users.css.scss
+	invoke  	scss
+	create    		app/assets/stylesheets/scaffolds.css.scss
+```
+
+migrate the database
+```
+bundle exec rake db:migrate
+```
+
+run rails
+```
+rails s
+```
+rails should now be running on port 3000
+=================================================
+end book
+=================================================
+
+databases
+=========
+migrate database
+----------------
+bundle exec rake db:migrate
+
+view all tasks available
+---------------------
+bundle exec rake -T
+
+view databases tasks
+---------------------
+bundle exec rake -T db
 
 
 
 
-
-
-
-
-
-
-
+=================================================
 
 
 
