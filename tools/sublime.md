@@ -93,3 +93,33 @@ SublimeERB
 ctlr + shift+ .
 close off tag.. option + command + .
 
+
+Go to Sublime Text > Preferences > Keybindings - User
+Copy/Paste the following:
+
+```
+[
+{ "keys": ["ctrl+shift+r"], "command": "reindent" , "args": { "single_line": false } }
+]
+```
+
+Now, you can select the whole document, _or_ a partial of code and do : CONTROL + SHIFT + R.
+
+
+----------
+plugins
+---------
+gitgutter
+sidebar enhancements
+
+ctags + (brew install ctags)
+
+
+more:
+http://www.damln.com/log/setup/
+
+comment out highlighted block
+-----------------------------
+```
+command + /
+```

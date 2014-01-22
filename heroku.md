@@ -49,3 +49,11 @@ To install it, we run bundle install with a special flag:
 bundle install --without production
 ```
 The ```--without production``` option prevents the local installation of any production gems, which in this case is just pg. (Because the only gem we’ve added is restricted to a production environment, right now this command doesn’t actually install any additional local gems, but it’s needed to update Gem- file.lock since that’s what Heroku uses to infer the gem requirements of our application.)
+
+
+if you need to find the name of your heroku server you can run 
+```
+less .git/config 
+
+```
+
