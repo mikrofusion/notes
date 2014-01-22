@@ -193,6 +193,52 @@ end
 
 
 
+app/model/concerns
+concerns
+ - partial for models
+
+module <Class>
+    
+end
+
+modeul ClassMethods
+
+private
+
+putc
+puts
+print
+
+methods ending with ? should be treated as boolean methods (i.e. return true or false)
+
+puts "one of the strings is empty" if x.empty? || y.empty?
+
+puts "x is not empty" if !x.empty?
+puts "x is not empty" unless x.empty
+
+
+nil.nil?
+
+a.sort
+a.sort!
+
+a.shuffle
+
+a.push(6) is the same as a << 6
+
+(0..9).to_a
+a = %w[foo bar baz quux]
+('a'..'e').to_a
+
+(1..5).each { |i| puts 2 * i }
+(1..5).each do |number| 
+    puts 2 * |number|
+end
+
+(1..5).map { |i| i**2 }
+
+
+
 
 
 
