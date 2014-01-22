@@ -75,3 +75,4 @@ https://rvm.io/rvm/basics
 ===================
 
 gem install rails
+rvm use rails-4.0.2

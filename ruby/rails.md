@@ -1,8 +1,29 @@
+siege <ip> -b 15s
 
 
 
+rails g migration <Name>
+github unicorn
+
+htop
 
 
+puma -> threading request
+  -> 
+
+  haproxy -- general tool
+
+kill -TTUO <pid>
+
+standard practice to use rubygems..
+
+monet - kills processes
+
+git push -f
+
+bundle exec rails console
+
+~/.rbenv /versions/
 
 -----------
 ugg lost beginning of notes here
@@ -65,10 +86,21 @@ ActiveRecord <- object relational database mapping
 
 
 
+[].tap do |arr|
+	arr << 
+end
+
+(1..100).to_a
+
+2.days.ago..time.now
+
+each_with_index.do |obj, index|
+end
+
+humanize.
 
 
-
-
+--- reflection stuff
 
 
 
