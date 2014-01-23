@@ -237,6 +237,93 @@ end
 
 (1..5).map { |i| i**2 }
 
+('a'..'z').to_a.shuffle[0..7].join
+premature optimization is the root of all evil
+
+Hash
+user = {}
+
+user[:first_name] = 'mike'
+
+:name.to_s
+
+user = { :name => 'mike'} --- in ruby 1.9 and above is equal to
+```
+    user = {name: 'mike'}
+```
+
+hash of hash
+------------
+params = {}
+params[:user] = { name: 'mike', email: 'mike@example.com' }
+
+params.each do |key, value|
+    puts "key #{key} has value #{value}"
+end
+
+puts a.inspect is the same as p a
+
+method names do not need () for the arguments and if a hash is the last argument it does not need {}
+i.e. 
+style_sheet_link_tag("application", {:media => "all"}) is equal to
+style_sheet_link_tag "application", :media => "all"
+style_sheet_link_tag "application", media: "all"
+
+h = Hash.new is the same as h = {}
+
+s = "foobar"
+s.class.superclass.superclass
+
+string -> object -> basicobject -> nil
+
+class Word < String
+    def palindrome?
+        self == self.reverse
+    end
+end
+
+w = Word.new("level")
+w.palindrome
+w.length
+w.class.superclass
+w.class
+
+add palindrome to String class
+
+class String
+    def palindrome?
+        self == self.reverse
+    end
+end
+
+
+20.years.ago
+20.years.from_now
+"".blank?
+nil.blank?
+
+class User
+    attr_accessor :name, :email
+
+    def initialize(attributes = {})  # default argument
+        @name = attributes[:name]
+        @email = attributes[:email]
+
+    def formatted_email
+        "#{@name} #{@email}"
+    end
+end
+
+
+
+include file 
+
+require './user'
+
+note:  isntance variables created inside the controller are available inside the views
+
+
+ruby-docs.org/core-1.9.3/String
 
 
 
@@ -244,9 +331,8 @@ end
 
 
 
-
-
-===============================
+==========================
+=====
 
 couchbase successor to memcache
 
