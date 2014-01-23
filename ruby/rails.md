@@ -1,3 +1,23 @@
+
+
+# = instance method
+:: = class method
+
+Use :: for describing class methods, # for describing instance methods, and use . for example code
+
+for example
+    
+    ```
+    Class::method
+    class = Class.new
+    ```
+
+```class.method``` should be written as ```Class#method``` in documentation
+and when used in examples would be written ```class.method```
+
+
+
+
 require 'mini-test/spec'
 
 ruby minitest-cheat-sheet
@@ -324,6 +344,187 @@ note:  isntance variables created inside the controller are available inside the
 
 
 ruby-docs.org/core-1.9.3/String
+
+<%= link_to 'sample app', "#", id:'logo' %>
+
+
+<%= link_to image_tag('', alt: 'rails'), ''
+
+csrf_meta_tags
+
+
+app/assets/stylesheets/custom.css.scss
+@import 'bootstrap'
+add bootstra-sass-gem
+
+partials start with an __
+_shim.html_
+include vi
+render 'layouts/shim'
+
+
+rails asset pipeline
+ - prev versions all had them in public directory
+
+newer versions of rails has stylesheets javascript and images in 3 places
+vendor/assets/(javascripts/stylesheets) (these are for third party assets)
+lib/assets --- for custom javascript / third parts
+app/assets -- for this projects stuff
+
+custom.css.scss.erb (first run ERB tehn SCSS then css)
+
+
+scss every valid css file is an scss file
+
+.center {
+    
+}
+
+.center h1 {
+    
+}
+
+.center h1:hover {
+    
+}
+
+is euqal to in scss
+
+.center {
+    h1 {
+        &:hover {
+        }
+    }
+}
+
+you can also use variables like:
+$lightGrey = 999
+
+bootstrap less @variable = $variable (i.e. colors) wiht the gem
+
+named routes
+============
+visit root_path
+visit contact_path
+
+root :to => 'static_pages#index' (delete public index)
+match '/help', to:'static_pages#help'
+
+
+rails generate controller Users new --no-test-framework
+match '/signup', to:'users#new'
+rails generate model User name:string email:string
+
+create_table :users do |t|
+    t.string :name
+    t.string :email
+    t.timestamps
+end
+
+bundle exec rake db:migrate
+bundle exec rake db:rollback
+
+
+for irriversable migrateions use raisl
+
+sqllgiht database browser
+
+get info - open with (sqlight database browser) change all
+
+sandbox 
+-------
+any modifications done get rolled back when you exit
+rails console --sandbox 
+
+
+User.new(name:"", email:"")
+User.save
+
+User.create
+User.destroy
+User.find(<id>)
+User.first
+User.find(3) # throws an exception if not found
+User.find_by_id # same as find, but returns nil if not found
+User.find_by_email
+User.find_by_name
+user.email = ""
+user.save
+
+user.update_attributes(name:"dude", email:'dud@dudeabides')
+ - updates the directory directly
+
+rake db:test:prepare
+
+
+validates :name, prescence: true, length: {maximum:50}
+rubular.com
+VALID_EMAIL_REGEX = ''
+validates :email, presence: true, format: {with: VALID_EMAIL_REGEX},
+            uniqueness: {case_sensitive: false}
+
+
+enforce uniqueness at the database layer as well to prevent race conditions.  rails generate migration add_index_to_users_email
+
+class AddIndexToUsersEmail < ActiveRecord::Migration
+    def change
+        add_index :users, :email, unique:true
+    end
+
+define_method <string>
+
+before_save { |user| user.email = user.email.downcase}
+
+password_digest as a column in a database allows you to use the has_secure_password
+
+rails generate migration add_password_digest_to_users password_digest:string
+
+rake db:test:prepare
+
+
+attr_accessible :name, :email, :password, :password_confirmation
+has_secure_password
+
+validates :password, presence: true, length: {minimum: 6}
+validates :password_confirmation, presence: true
+
+user = User.find_by_email(email)
+user = user.authenticate(password)
+
+api.rubyonraisl.org
+guide.rubyonrails.org
+
+
+debug(params) if Rails.env.development?
+
+deevelopment / test / production environment
+rails.env.development?
+
+
+@mixin
+
+sublime sass highligher
+
+rake db:reset
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
