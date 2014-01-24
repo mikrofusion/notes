@@ -1,3 +1,7 @@
+Style
+-----
+http://ruby-doc.org/documentation-guidelines.html
+
 Interactive Ruby
 ----------------
 To run Ruby from the command line run:

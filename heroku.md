@@ -12,6 +12,13 @@ module SampleApp
 
 
 
+note:
+```
+git push heroku yourbranch:master
+```
+
+
+
 git clone git://github.com/heroku/ruby-sample.git
 cd ruby-sample
 
