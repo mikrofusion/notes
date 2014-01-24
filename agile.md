@@ -47,6 +47,7 @@ reject
 
 velocity
 --------
+points per week for the whole team (chores and bugs get no points) used for forecasting but not targets
 
 
 -----

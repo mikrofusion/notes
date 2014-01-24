@@ -1,3 +1,17 @@
+
+note;  had issues with rails 4... use this to create the project instead:
+rails _3.2.16_ new sample_app --skip-test-unit
+
+you will also need to add the following to config/application.rb
+module SampleApp
+  class Application < Rails::Application
+
+    config.assets.initialize_on_precompile = false
+
+
+
+
+
 git clone git://github.com/heroku/ruby-sample.git
 cd ruby-sample
 
