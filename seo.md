@@ -16,4 +16,6 @@ https://plus.google.com/u/0/+PatrickSexton/posts
 
 google micro format
 
+taxonomy
+
 

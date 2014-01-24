@@ -1,3 +1,13 @@
+Middleware
+ActionDispatch::Static - serves static files under public directory
+Rack::Lock - locks the app down to a single thread 
+ActiveSupport::Cache - Rails.cache - provides a key value based caching mechanism
+
+Rack::Runtime  adds an xheader to teh response with the time it took to process the response
+
+Rack
+
+
 
 
 # = instance method
