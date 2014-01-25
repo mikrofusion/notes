@@ -1,3 +1,29 @@
+http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use
+
+rake routes
+-----------
+Verb    Path              Action     Helper
+
+GET     /photos           index      photos_path
+GET     /photos/new       new        new_photo_path
+POST    /photos           create     photos_path
+GET     /photos/:id       show       photo_path(:id)
+GET     /photos/:id/edit  edit       edit_photo_path(:id)
+PUT     /photos/:id       update     photo_path(:id)
+DELETE  /photos/:id       destroy    photo_path(:id)
+
+
+
+redirect_to :back
+resources  :todos
+
+Docs
+----
+http://api.rubyonrails.org/
+
+http://guides.rubyonrails.org/routing.html
+
+
 Middleware
 ActionDispatch::Static - serves static files under public directory
 Rack::Lock - locks the app down to a single thread 
@@ -7,6 +33,8 @@ Rack::Runtime  adds an xheader to teh response with the time it took to process 
 
 Rack
 
+
+rollout for feature codes
 
 
 
@@ -57,46 +85,46 @@ subl .
 
 modify gemfile with the following:
 ```
-	source 'https://rubygems.org'
+    source 'https://rubygems.org'
 
-	gem 'rails', '3.2.16'
-	gem 'bootstrap-sass', '2.1'
-	gem 'bcrypt-ruby', '3.0.1'
-	gem 'faker', '1.0.1'
-	gem 'will_paginate', '3.0.3'
-	gem 'bootstrap-will_paginate', '0.0.6'
-	gem 'jquery-rails', '2.0.2'
+    gem 'rails', '3.2.16'
+    gem 'bootstrap-sass', '2.1'
+    gem 'bcrypt-ruby', '3.0.1'
+    gem 'faker', '1.0.1'
+    gem 'will_paginate', '3.0.3'
+    gem 'bootstrap-will_paginate', '0.0.6'
+    gem 'jquery-rails', '2.0.2'
 
-	group :development, :test do
-	  gem 'sqlite3', '1.3.5'
-	  gem 'rspec-rails', '2.11.0'
-	  gem 'guard-rspec', '1.2.1'
-	  gem 'guard-spork', '1.2.0'
-	  gem 'childprocess', '0.3.6'
-	  gem 'spork', '0.9.2'
-	end
+    group :development, :test do
+      gem 'sqlite3', '1.3.5'
+      gem 'rspec-rails', '2.11.0'
+      gem 'guard-rspec', '1.2.1'
+      gem 'guard-spork', '1.2.0'
+      gem 'childprocess', '0.3.6'
+      gem 'spork', '0.9.2'
+    end
 
-	# Gems used only for assets and not required
-	# in production environments by default.
-	group :assets do
-	  gem 'sass-rails',   '3.2.5'
-	  gem 'coffee-rails', '3.2.2'
-	  gem 'uglifier', '1.2.3'
-	end
+    # Gems used only for assets and not required
+    # in production environments by default.
+    group :assets do
+      gem 'sass-rails',   '3.2.5'
+      gem 'coffee-rails', '3.2.2'
+      gem 'uglifier', '1.2.3'
+    end
 
-	group :test do
-	  gem 'capybara', '1.1.2'
-	  gem 'factory_girl_rails', '4.1.0'
-	  gem 'cucumber-rails', '1.2.1', :require => false
-	  gem 'database_cleaner', '0.7.0'
-	  # gem 'launchy', '2.1.0'
-	  # gem 'rb-fsevent', '0.9.1', :require => false
-	  # gem 'growl', '1.0.3'
-	end
+    group :test do
+      gem 'capybara', '1.1.2'
+      gem 'factory_girl_rails', '4.1.0'
+      gem 'cucumber-rails', '1.2.1', :require => false
+      gem 'database_cleaner', '0.7.0'
+      # gem 'launchy', '2.1.0'
+      # gem 'rb-fsevent', '0.9.1', :require => false
+      # gem 'growl', '1.0.3'
+    end
 
-	group :production do
-	  gem 'pg', '0.12.2'
-	end
+    group :production do
+      gem 'pg', '0.12.2'
+    end
 ```
 bundle --without production
 
@@ -169,17 +197,17 @@ require 'spec_helper'
 
 describe "StaticPages" do
 
- 	describe "Home page" do
- 		it "should have the content 'Sample App'" do
- 			visit '/static_pages/home'
- 			page.should have_content('Sample App')
+    describe "Home page" do
+        it "should have the content 'Sample App'" do
+            visit '/static_pages/home'
+            page.should have_content('Sample App')
 
- 			---> or you can say
+            ---> or you can say
 
- 			page.should have_selector('h1' :text=> 'Sample App')
+            page.should have_selector('h1' :text=> 'Sample App')
 
- 		end
- 	end
+        end
+    end
 end
 
 ```
@@ -576,18 +604,18 @@ ugg lost beginning of notes here
 
 
 config/routes.rb
-	resources :users -> sets up correspondences between 
+    resources :users -> sets up correspondences between 
 app/controller/users_controller.rb
 
-	def index 
-		@users = User.all
+    def index 
+        @users = User.all
 
-	end
+    end
 
 views/users/index.html.erb
-	<% @users.each do |user| %>
-		<%= user.email %>
-	<% end %>
+    <% @users.each do |user| %>
+        <%= user.email %>
+    <% end %>
 
 
 HTTPRequest      URL          Action    Purpose
@@ -618,11 +646,11 @@ resources :microposts
 resources :users
 
 app/models/micropost.rb
-	validates :content, :length => { :maximum => 140 }
-	belongs_to :user
+    validates :content, :length => { :maximum => 140 }
+    belongs_to :user
 
 app/models/user.rb
-	has_many :microposts
+    has_many :microposts
 
 
 
@@ -632,7 +660,7 @@ ActiveRecord <- object relational database mapping
 
 
 [].tap do |arr|
-	arr << 
+    arr << 
 end
 
 (1..100).to_a
@@ -743,49 +771,49 @@ will create the following files:
 Active Record
 -------------
 >> database model creation ... 
- 	invoke  active_record
+    invoke  active_record
 
 >> create an active record migration path... ActiveRecord::Migration
-	create  	db/migrate/20140120192044_create_users.rb
+    create      db/migrate/20140120192044_create_users.rb
 
 >> create a model that inherits from ActiveRecord::Base
-	create    		app/models/user.rb
+    create          app/models/user.rb
 
 >> add test unit cases
-	invoke    		test_unit
-	create      		test/models/user_test.rb
-	create      		test/fixtures/users.yml
+    invoke          test_unit
+    create              test/models/user_test.rb
+    create              test/fixtures/users.yml
 
 Routes
 ------
 >> create routes.
-	invoke  resource_route
-	route    	resources :users
-	invoke  scaffold_controller
-	create    	app/controllers/users_controller.rb
-	invoke    	erb
-	create      	app/views/users
-	create      	app/views/users/index.html.erb
-	create      	app/views/users/edit.html.erb
-	create      	app/views/users/show.html.erb
-	create      	app/views/users/new.html.erb
-	create      	app/views/users/_form.html.erb
-	invoke    test_unit
-	create      	test/controllers/users_controller_test.rb
-	invoke    helper
-	create      	app/helpers/users_helper.rb
-	invoke      	test_unit
-	create        		test/helpers/users_helper_test.rb
-	invoke    jbuilder
-	create      	app/views/users/index.json.jbuilder
-	create      	app/views/users/show.json.jbuilder
-	invoke  assets
-	invoke    	coffee
-	create     	 	app/assets/javascripts/users.js.coffee
-	invoke    	scss
-	create      	app/assets/stylesheets/users.css.scss
-	invoke  	scss
-	create    		app/assets/stylesheets/scaffolds.css.scss
+    invoke  resource_route
+    route       resources :users
+    invoke  scaffold_controller
+    create      app/controllers/users_controller.rb
+    invoke      erb
+    create          app/views/users
+    create          app/views/users/index.html.erb
+    create          app/views/users/edit.html.erb
+    create          app/views/users/show.html.erb
+    create          app/views/users/new.html.erb
+    create          app/views/users/_form.html.erb
+    invoke    test_unit
+    create          test/controllers/users_controller_test.rb
+    invoke    helper
+    create          app/helpers/users_helper.rb
+    invoke          test_unit
+    create              test/helpers/users_helper_test.rb
+    invoke    jbuilder
+    create          app/views/users/index.json.jbuilder
+    create          app/views/users/show.json.jbuilder
+    invoke  assets
+    invoke      coffee
+    create          app/assets/javascripts/users.js.coffee
+    invoke      scss
+    create          app/assets/stylesheets/users.css.scss
+    invoke      scss
+    create          app/assets/stylesheets/scaffolds.css.scss
 ```
 
 migrate the database
@@ -866,10 +894,10 @@ end
 
 ```
 group :test, :development do
-	gem 'rspec-rails'
-	gem 'capybara'
-	gem 'guard-rspec'
-	gem 'growl_notify'
+    gem 'rspec-rails'
+    gem 'capybara'
+    gem 'guard-rspec'
+    gem 'growl_notify'
 end
 ```
 then to have rails update the gemfiles run:
