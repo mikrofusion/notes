@@ -36,6 +36,7 @@ pass data to shim:
 before filter:
  before_filter :get_todo, :only => [:update, :destroy]
 
+ =======================
 
 redirect_to :back
 resources  :todos
