@@ -14,7 +14,8 @@ DELETE  /photos/:id       destroy    photo_path(:id)
 
 
 
-
+render
+======
 within view (note, remote: true):  
   <%= link_to "", todo_path(todo, completed: !completed), class: checkbox_class , type: "checkbox", method: :put, remote: true %>
 
@@ -28,8 +29,9 @@ within controller:
     end
 
 
-render
-------
+
+pass data to shim:
+<%= render "footer", count: @todos.count %>
 
 
 redirect_to :back
