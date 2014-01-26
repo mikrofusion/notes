@@ -14,6 +14,22 @@ DELETE  /photos/:id       destroy    photo_path(:id)
 
 
 
+
+within view (note, remote: true):  
+  <%= link_to "", todo_path(todo, completed: !completed), class: checkbox_class , type: "checkbox", method: :put, remote: true %>
+
+within controller:
+-------------------
+  respond_to do |format|
+      format.html { redirect_to root_path }
+      format.js { render layout: 'list' }
+    end
+
+
+render
+------
+
+
 redirect_to :back
 resources  :todos
 
