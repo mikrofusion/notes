@@ -33,6 +33,9 @@ within controller:
 pass data to shim:
 <%= render "footer", count: @todos.count %>
 
+before filter:
+ before_filter :get_todo, :only => [:update, :destroy]
+
 
 redirect_to :back
 resources  :todos
