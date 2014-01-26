@@ -1,3 +1,74 @@
+
+render & render :partial
+-------------------------
+render is a shorthand for render :partial.
+render will not accept additionnal local variables for the partial, you need to use render :partial as following for that:
+
+render :partial 'some/path/to/my/partial', locals: { custom_var: 'Hello' }
+(http://guides.rubyonrails.org/layouts_and_rendering.html#passing-local-variables)
+
+yield & content_for
+-------------------
+yield is typically used in layouts. It tells Rails to put the content for this block at that place in the layout.
+When you do yield :something associated with content_for :something, you can pass a block of code (view) to display where the yield :something is placed (see example below).
+A small example about yield:
+
+In your layout:
+
+<html>
+<head>
+ <%= yield :javascript_head %>
+</head>
+<body>
+ <div id="sidebar">
+   <%= yield :sidebar %>
+ </div>
+</body>
+In one of your view:
+
+<% content_for :sidebar do %>
+  This content will show up in the sidebar section
+<% end %>
+
+<% content_for :javascript_head do %>
+  <script type="text/javascript">
+    console.log("Hello World!");
+  </script>
+<% end %>
+This will produce the following HTML:
+
+<html>
+<head>
+  <script type="text/javascript">
+    console.log("Hello World!");
+  </script>
+</head>
+<body>
+ <div id="sidebar">
+   This content will show up in the sidebar section
+ </div>
+</body>
+
+
+==============================================================
+
+render is used for invoking a partial page template whereas yield is used a placeholder where you want the output of your templates to yield their content. So you use render when building up the content, and yield to show the content in essence.
+
+As a general rule of thumb, yield is used in the 'layout' level templates (in the most basic example, the application.html.erb in the /app/views/layout directory). Render is used in your resource/action specific templates.
+
+Also take a look at the content_for tag (block) and how you can use it to further break up your application-level templates into sections.
+
+Obligatory guides@rubyonrails.org link: http://guides.rubyonrails.org/layouts_and_rendering.html
+
+
+
+
+
+
+
+
+
+
 http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use
 
 rake routes
