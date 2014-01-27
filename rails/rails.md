@@ -50,6 +50,9 @@ This will produce the following HTML:
 </body>
 
 
+=========
+
+
 ==============================================================
 
 render is used for invoking a partial page template whereas yield is used a placeholder where you want the output of your templates to yield their content. So you use render when building up the content, and yield to show the content in essence.

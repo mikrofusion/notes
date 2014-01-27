@@ -13,6 +13,7 @@ module SampleApp
 
 
 note:
+heroku only 
 ```
 git push heroku yourbranch:master
 ```
