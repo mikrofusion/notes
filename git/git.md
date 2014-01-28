@@ -1,3 +1,8 @@
+git fetch
+---------
+keep in sync with other branches
+
+
 Installation
 ------------
 Download and install from: http://git-scm.com/
