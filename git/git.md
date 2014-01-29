@@ -1,6 +1,66 @@
 git fetch
 ---------
 keep in sync with other branches
+feature branch
+git add .
+git commit -m "commit"
+git checkout develop
+git pull
+git checkout branch
+git rebase develop
+git push 
+git checkout develop
+git merge feature 
+    <-- potetnial for other commits here
+git push
+    <--- would get error here
+=========================
+if develop change
+git reset --hard (or head)
+git pull
+git merge feature
+git push
+
+delete branch
+========================
+git push origin :<branch>
+
+
+
+git checkout --track -b develop origin/develop
+
+
+~/.gitprofile
+=====================================
+[color]
+    ui = true
+[core]
+    editor = <editor>
+[branch]
+  autosetuprebase = always
+[alias]
+  cp = cherry-pick
+  st = status -s
+  cl = clone
+  ci = commit
+  co = checkout
+  br = branch 
+  #corb = checkout --track -b $1 origin/$1
+  corb = "!f() { git checkout --track -b $1 origin/$1; }; f"
+  dlb = "!f() { cur=${get_git_branch}; git checkout master; git pull origin master; git branch -d ${cur}; }; f"
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  latest = "!f() { cur=$(git symbolic-ref --quiet --short HEAD 2> /dev/null); git checkout $1; git pull origin $1; echo --${cur}--; git co ${cur}; }; f"
+  par = "!f() { cur=$(git symbolic-ref --quiet --short HEAD 2> /dev/null); git checkout $1; git pull origin $1; echo --${cur}--; git co ${cur}; git rebase $1; }; f"
+
+[push]
+    default = current
+[pull]
+    default = current
+
+to view aliases run:
+--------------------
+git config --get-regexp alias
+
 
 
 Installation

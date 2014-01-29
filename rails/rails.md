@@ -1,3 +1,5 @@
+acts as paranoid
+
 Fixtures
 --------
 Fixtures is a fancy word for sample data. Fixtures allow you to populate your testing database with predefined data before your tests run. Fixtures are database independent written in YAML. There is one file per model.
