@@ -1,3 +1,17 @@
+bundle exec rake db:test:prepare
+bundle exec rake db:test:load
+
+
+
+spring (instead of spork)
+
+
+
+running:
+rake test TEST=test/controllers/restore_listing_test.rb
+
+
+
 require 'minitest/autorun'
 
 ```

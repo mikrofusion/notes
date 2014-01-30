@@ -6,11 +6,15 @@ git add .
 git commit -m "commit"
 git checkout develop
 git pull
+git reset --hard
 git checkout branch
 git rebase develop
 git push 
+
+# do pull request here
+
 git checkout develop
-git merge feature 
+git merge feature --no-ff
     <-- potetnial for other commits here
 git push
     <--- would get error here
