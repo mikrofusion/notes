@@ -1,3 +1,17 @@
+ohmyzch
+janis - karl hudajanis
+vundle
+
+dogmatic vim
+homesick
+
+cherry-pick <commit-id>
+
+
+git autocomplete
+----------------
+curl https://raw.github.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+
 git fetch
 ---------
 keep in sync with other branches
@@ -5,11 +19,11 @@ feature branch
 git add .
 git commit -m "commit"
 git checkout develop
-git pull
+git pull --rebase
 git reset --hard
 git checkout branch
 git rebase develop
-git push 
+git push -f origin <branchname>
 
 # do pull request here
 
