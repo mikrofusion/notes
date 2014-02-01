@@ -8,6 +8,9 @@ homesick
 cherry-pick <commit-id>
 
 
+memoization
+
+
 git autocomplete
 ----------------
 curl https://raw.github.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
