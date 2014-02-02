@@ -58,6 +58,9 @@ select line + C + [jk] - move line up or down
 C + p - fuzzy file finder
 
 
+C + z - suspend shell
+fg - bring the suspended shell back to vim
+
 GIT integration:
 	•	<leader>gb maps to :Gblame<CR>
 	•	<leader>gs maps to :Gstatus<CR>
@@ -66,13 +69,38 @@ GIT integration:
 	•	<leader>gc maps to :Gcommit<CR>
 	•	<leader>gp maps to :Git push<CR>
 
-C + z - suspend shell
-fg - bring the suspended shell back to vim
-
 GIT
 ---
 
+git fetch
+---------
+keep in sync with other branches
+feature branch
+git add .
+git commit -m "commit"
+git checkout develop
+git pull --rebase
+git reset --hard
+git checkout branch
+git rebase develop
+git push -f origin <branchname>
 
-d
+# do pull request here
 
-h
+git checkout develop
+git merge feature --no-ff
+    <-- potetnial for other commits here
+git push
+    <--- would get error here
+=========================
+if develop change
+git reset --hard (or head)
+git pull
+git merge feature
+git push
+
+delete branch
+========================
+git push origin :<branch>
+
+
