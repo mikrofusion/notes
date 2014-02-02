@@ -1,6 +1,6 @@
 C = ctrl
 
-
+TMUX
 ----
 C + ? - help
 
@@ -16,6 +16,8 @@ C + A, , - remane window
 C + A, q (then number) - show pane numbers (and optionally move to them)
 C + A, " - split pane horizontally C + A, % - split pane vertically
 C + A, [hjkl] - pane navigation
+C + A, alt + arrow - resize pane up or down
+C + A, { } - swap panes
 
 VIM (with Janus)
 ----------------
