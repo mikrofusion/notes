@@ -29,7 +29,7 @@ search
 ----
 /(word) - search for word
 in this mode press n and N to move forward and backward
-type enter again to clear highlighting  (custom due to vimrc)
+type space to clear highlighting  (custom due to vimrc)
 
 HML - move to top, middle, and bottom of screen
 () - move up or down one sentence
@@ -67,6 +67,8 @@ C + p - fuzzy file finder
 C + z - suspend shell
 fg - bring the suspended shell back to vim
 
+GIT
+---
 GIT integration:
 	•	<leader>gb maps to :Gblame<CR>
 	•	<leader>gs maps to :Gstatus<CR>
@@ -75,8 +77,18 @@ GIT integration:
 	•	<leader>gc maps to :Gcommit<CR>
 	•	<leader>gp maps to :Git push<CR>
 
-GIT
----
+Search(with Ack)
+----------------
+o    to open (same as enter)
+go   to preview file (open but maintain focus on ack.vim results)
+t    to open in new tab
+T    to open in new tab silently
+h    to open in horizontal split
+H    to open in horizontal split silently
+v    to open in vertical split
+gv   to open in vertical split silently
+q    to close the quickfix window
+
 
 git fetch
 ---------
