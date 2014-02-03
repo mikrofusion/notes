@@ -19,6 +19,10 @@ C + A, [hjkl] - pane navigation
 C + A, alt + arrow - resize pane up or down
 C + A, { } - swap panes
 
+^b then [ to enter copy mode, then four arrow keys to move, even past
+the visible point, which is great for scrolling--I don't use it much for
+copying/pasting.
+
 VIM (with Janus)
 ----------------
 search
