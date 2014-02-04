@@ -10,6 +10,16 @@ cherry-pick <commit-id>
 
 memoization
 
+git add to keychain
+git config --global credential.helper osxkeychain
+
+or to just have git cache
+git config --global credential.helper "cache --timeout=3600"
+
+
+https://github.com/mikegroseclose/notes.git
+
+git remote set-url origin https://github.com/mikegroseclose/notes.git
 
 git autocomplete
 ----------------
