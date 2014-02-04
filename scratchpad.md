@@ -3,6 +3,7 @@ C = ctrl
 
 TMUX
 ----
+
 C + ? - help
 
 C + A, C - new screen
@@ -28,6 +29,10 @@ VIM (with Janus)
 ----------------
 search
 ----
+/ fef - reindent selected files
+/ b - show buffers
+[ ] b - swap buffers
+
 /(word) - search for word
 in this mode press n and N to move forward and backward
 type space to clear highlighting  (custom due to vimrc)
