@@ -27,11 +27,19 @@ copying/pasting.
 
 VIM (with Janus)
 ----------------
+\ ci - comment / uncomment line (NERDcommander)
+
 search
 ----
 / fef - reindent selected files
 / b - show buffers
 [ ] b - swap buffers
+
+resize pane
+-----------
+C + w, + -
+or
+let &winheight = &lines * 7 / 10
 
 /(word) - search for word
 in this mode press n and N to move forward and backward
@@ -72,6 +80,14 @@ C + p - fuzzy file finder
 
 C + z - suspend shell
 fg - bring the suspended shell back to vim
+
+You start recording by q<letter> and you can end it by typing q again.
+
+Recording is a really useful feature of Vim.
+
+It records everything you type. You can then replay it simply by typing @<letter>. Record search, movement, replacement...
+
+One of the best feature of Vim IMHO.
 
 GIT
 ---
@@ -127,4 +143,39 @@ delete branch
 ========================
 git push origin :<branch>
 
+
+TDD
+===
+require "minitest_helper"
+
+describe Controller do
+
+  describe "POST create" do
+
+    context "when user is <blah>" do
+      let(:blah) { create(:blah) }
+
+      before do
+        blah.wont_be_nil
+        foo.deleted?.must_equal true
+        post :create, id: blah.id
+      end
+
+      it "will <bleh>" # skip test
+
+      it "redirects to <x>" do
+        assert_redirected_to <lkajs>
+      end
+
+      it "requires <y> to log in" do
+        response.body.must_equal '<message>'
+      end
+    end
+  end
+end
+
+whenever you run a migration::
+bundle exec rake db:test:load
+
+bundle exec rake test TEST=/test/
 

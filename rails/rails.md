@@ -1,3 +1,8 @@
+try / catch
+-----------
+begin / rescue / end
+
+
 acts as paranoid
 
 Fixtures
