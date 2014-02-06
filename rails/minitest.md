@@ -36,6 +36,333 @@ minitest
 --------
 rails new store -T
 
+add to Gemfile
+group :test do
+  gem 'minitest'
+end
+
+test/minitest_helper.rb
+ENV["RAILS_ENV"] = "test"
+require File.expand_path("../../config/environment", __FILE__)
+require "minitest/autorun"
+
+
+test/models/product_test.rb
+require "minitest_helper"
+
+class ProductTest < MiniTest::Unit::TestCase
+  def test_to_param
+    product = Product.create!(name: "Hello World")
+    assert_equal "#{product.id}-hello-world", product.to_param
+  end
+end
+or
+
+describe Product do
+  it "includes name in param" do
+    product = Product.create!(name: "Hello World")
+    "product.to_param.must_equal #{product.id}-hello-world"
+  end
+end
+
+
+
+rake db:test:prepare
+
+lib/task/minitest.rake
+
+require 'rake/testtask'
+
+Rake::TestTask.new(:test => 'db:test:prepare') do |t|
+  t.libs << 'test'
+  t.pattern = "test/**/*_test.rb"
+end
+
+task :default => :test
+
+turn gem
+
+
+
+
+
+
+
+
+
+Test syntax
+
+UNIT	SPEC	ARGUMENTS	EXAMPLES
+
+assert_empty
+refute_empty
+
+must_be_empty
+wont_be_empty
+
+obj, msg=nil
+assert_empty []
+
+refute_empty [1,2,3]
+
+[].must_be_empty
+
+[1,2,3].wont_be_empty
+
+
+
+assert_equal
+refute_equal
+
+must_equal
+wont_equal
+
+exp, act, msg=nil
+assert_equal 2, 2
+
+refute_equal 2,1
+
+2.must_equal 2
+
+2.wont_equal 1
+
+
+
+assert_in_delta
+refute_in_delta
+
+must_be_within_delta
+wont_be_within_delta
+
+exp, act, dlt=0.001, msg=nil
+assert_in_delta 2012, 2010, 2
+
+refute_in_delta 2012, 3012, 2
+
+2012.must_be_within_delta 2010, 2
+
+2012.wont_be_within_delta 3012, 2
+
+
+
+
+must_be_close_to
+wont_be_close_to
+
+act, dlt=0.001, msg=nil
+2012.must_be_close_to 2010, 2
+
+2012.wont_be_close_to 3012, 2
+
+
+
+assert_in_epsilon
+refute_in_epsilon
+
+must_be_within_epsilon
+wont_be_within_epsilon
+
+a, b, eps=0.001, msg=nil
+assert_in_epsilon 1.0, 1.02, 0.05
+
+refute_in_epsilon 1.0, 1.06, 0.05
+
+1.0.must_be_within_epsilon 1.02, 0.05
+
+1.0.wont_be_within_epsilon 1.06, 0.05
+
+
+
+assert_includes
+refute_includes
+
+must_include
+wont_include
+
+collection, obj, msg=nil
+assert_includes [1, 2], 2
+
+refute_includes [1, 2], 3
+
+[1, 2].must_include 2
+
+[1, 2].wont_include 3
+
+
+
+assert_instance_of
+refute_instance_of
+
+must_be_instance_of
+wont_be_instance_of
+
+klass, obj, msg=nil
+assert_instance_of String, "bar"
+
+refute_instance_of String, 100
+
+"bar".must_be_instance_of String
+
+100.wont_be_instance_of String
+
+
+
+assert_kind_of
+refute_kind_of
+
+must_be_kind_of
+wont_be_kind_of
+
+klass, obj, msg=nil
+assert_kind_of Numeric, 100
+
+refute_kind_of Numeric, "bar"
+
+100.must_be_kind_of Numeric
+
+"bar".wont_be_kind_of Numeric
+
+
+
+assert_match
+refute_match
+
+must_match
+wont_match
+
+exp, act, msg=nil
+assert_match /\d/, "42"
+
+refute_match /\d/, "foo"
+
+"42".must_match /\d/
+
+"foo".wont_match /\d/
+
+
+
+assert_nil
+refute_nil
+
+must_be_nil
+wont_be_nil
+
+obj, msg=nil
+assert_nil [].first
+
+refute_nil [1].first
+
+[].first.must_be_nil
+
+[1].first.wont_be_nil
+
+
+
+assert_operator
+refute_operator
+
+must_be
+wont_be
+
+o1, op, o2, msg=nil
+assert_operator 1, :<, 2
+
+refute_operator 1, :>, 2
+
+1.must_be :<, 2
+
+1.wont_be :>, 2
+
+
+
+assert_output
+
+must_output
+
+stdout = nil, stderr = nil
+assert_output("hi\n"){ puts "hi" }
+
+Proc.new{puts "hi"}.must_output "hi\n"
+
+
+
+assert_raises
+
+must_raise
+
+*exp
+assert_raises(NoMethodError){ nil! }
+
+Proc.new{nil!}.must_raise NoMethodError
+
+
+
+assert_respond_to
+refute_respond_to
+
+must_respond_to
+wont_respond_to
+
+obj, meth, msg=nil
+assert_respond_to "foo",:empty?
+
+refute_respond_to 100, :empty?
+
+"foo".must_respond_to :empty?
+
+100.wont_respond_to :empty?
+
+
+
+assert_same
+refute_same
+
+must_be_same_as
+wont_be_same_as
+
+exp, act, msg=nil
+assert_same :foo, :foo
+
+refute_same ['foo'], ['foo']
+
+:foo.must_be_same_as :foo
+
+['foo'].wont_be_same_as ['foo']
+
+
+
+assert_silent
+
+must_be_silent
+
+-
+assert_silent{ 1 + 1 }
+
+Proc.new{ 1 + 1}.must_be_silent
+
+
+
+assert_throws
+
+must_throw
+
+sym, msg=nil
+assert_throws(:up){ throw :up}
+
+Proc.new{throw :up}.must_throw :up
+
+
+Test Setup
+
+UNIT	SPEC
+setup()	before(type = nil, &block)
+teardown()	after(type = nil, &block)
+
+
+
+
+
+
 
 
 
