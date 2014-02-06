@@ -1,3 +1,79 @@
+factory_girl
+
+Factory.define :user do |f|
+  f.username = 'foo'
+  f.password = 'foobar'
+  f.password_confirmation = { |u| u.password }
+  f.email 'test@example.com'
+end
+
+in test_helper
+require File.dirname(__FILE__) + '/factories'
+
+
+============================================
+
+
+
+
+
+
+
+
+rake db:create --create the database.
+rake -T   ---- lists available rake commands
+rails s / rails server - 
+rails generate controller home index
+
+
+From Rails Guids - guides.rubyonrails.org
+----------------
+Action Pack - gem that contains the Action Controller, Action View, and
+Action Dispatch.  The VC of MVC.
+
+- Action controller - the component that manages the controllers in a
+  rails application.  Action Controller framework processes incoming
+requests, extracts params, and dispatches them to the intended action.
+(session management, template rendering, redirect management)
+
+- Action View - manages teh views of a rails application.  It can create
+  both HTML and XML output bu default. nested and partial templates and
+includes built in ajax support
+
+- Action Dispatch - handles routing of web requests and dispatches them
+  as you want, either to your application or any other Rack application.
+
+Action Mailer - framework for building email services.  Recieve and
+process incoming email and send simple plain text or complex multipart
+email based on flexible templates.
+
+Action Model - Provides a defined interface between teh Action Pack gem
+service and Object Relationship Mapping Gems such as Action Recover.
+Active model allows Rails to utilize other ORM frameworks in place of
+Active recovrd if your applciation needs this.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   request.env['HTTP_USER_AGENT'] 
 
 bundle exec rake db:test:prepare
