@@ -1,3 +1,5 @@
+  request.env['HTTP_USER_AGENT'] 
+
 bundle exec rake db:test:prepare
 bundle exec rake db:test:load
 

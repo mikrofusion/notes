@@ -28,6 +28,7 @@ copying/pasting.
 VIM (with Janus)
 ----------------
 \ ci - comment / uncomment line (NERDcommander)
+\ cc - same as above
 
 search
 ----
@@ -89,6 +90,10 @@ It records everything you type. You can then replay it simply by typing @<letter
 
 One of the best feature of Vim IMHO.
 
+select all
+----------
+ggvG
+
 GIT
 ---
 GIT integration:
@@ -121,8 +126,9 @@ git commit -m "commit"
 git checkout develop
 git pull --rebase
 git reset --hard
-git checkout branch
-git rebase develop
+#git checkout branch
+#git rebase develop -i
+git rebase -i develop <branchname>
 git push -f origin <branchname>
 
 # do pull request here
@@ -142,6 +148,8 @@ git push
 delete branch
 ========================
 git push origin :<branch>
+
+git commit --amend
 
 
 TDD
