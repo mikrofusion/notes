@@ -3,7 +3,6 @@ C = ctrl
 
 TMUX
 ----
-
 C + ? - help
 
 C + A, C - new screen
@@ -20,6 +19,10 @@ C + A, " - split pane horizontally C + A, % - split pane vertically
 C + A, [hjkl] - pane navigation
 C + A, alt + arrow - resize pane up or down
 C + A, { } - swap panes
+C + A, C + O - swap panes
+
+C + A, t - display time
+C + A, s - display sessions
 
 C + A then [ to enter copy mode, then four arrow keys to move, even paste
 the visible point, which is great for scrolling--I don't use it much for
@@ -35,6 +38,10 @@ search
 / fef - reindent selected files
 / b - show buffers
 [ ] b - swap buffers
+
+<leader> n - show or hide side panel
+<leader> b - show buffers
+
 
 resize pane
 -----------
