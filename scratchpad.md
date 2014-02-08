@@ -1,5 +1,9 @@
-
 C = ctrl
+
+PRY
+---
+Edit
+Edit-method
 
 TMUX
 ----
