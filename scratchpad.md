@@ -39,6 +39,14 @@ edit "Todo#create" (edit method where model = Todo, and method = create"
 
 VIM (with Janus)
 ----------------
+<leader> b - open buffer
+space / C + space - move forward back through buffer list
+
+C + W, o - zoom in or out on current window
+
+<leader> + r - run all tests
+<leader> + R - run closest spec
+
 0 - beginning of string 
 $ - end of string
 w - forward to beginning of word (based on iskeyword)
