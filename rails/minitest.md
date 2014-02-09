@@ -4,6 +4,8 @@
 factory_girl
 ------------
 
+
+
 in factories.rb
 Factory.define :user do |f|
   f.username = 'foo'

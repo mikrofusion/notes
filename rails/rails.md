@@ -1,3 +1,8 @@
+self vs @
+---------
+@ - ruby instance variables
+self.method - rails, field created in a table. @attributes[method]
+
 try / catch
 -----------
 begin / rescue / end

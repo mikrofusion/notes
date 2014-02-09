@@ -32,6 +32,11 @@ C + A then [ to enter copy mode, then four arrow keys to move, even paste
 the visible point, which is great for scrolling--I don't use it much for
 copying/pasting.
 
+PRY
+---
+edit -m (opens file where current binding pry is being called"
+edit "Todo#create" (edit method where model = Todo, and method = create"
+
 VIM (with Janus)
 ----------------
 \ ci - comment / uncomment line (NERDcommander)
