@@ -62,7 +62,7 @@ C+F - forward  full page
 C+B - back full page
 C + U - up half page
 C + D - down half page
-H - head 
+H - head
 M - middle
 L - last
 
