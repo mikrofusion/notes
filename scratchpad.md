@@ -81,7 +81,7 @@ G - bottom
 
 * - turn the word you are on into a search term
 # - previous word as search term
-g* - same as * but match part of word 
+g\* - same as * but match part of word
 g# - same as # match part of word
 n - next word
 N - previous word
@@ -342,8 +342,8 @@ git push origin :<branch>
 git commit --amend
 
 
-TDD
-===
+TDD / MiniTest
+==============
 require "minitest_helper"
 
 describe Controller do
@@ -377,3 +377,12 @@ bundle exec rake db:test:load
 
 bundle exec rake test TEST=/test/
 
+FactoryGirl
+-----------
+FactoryGirl.
+
+
+references
+----------
+http://arjanvandergaag.nl/blog/factory_girl_tips.html
+https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md
