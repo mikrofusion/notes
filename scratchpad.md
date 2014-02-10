@@ -305,7 +305,8 @@ v    to open in vertical split
 gv   to open in vertical split silently
 q    to close the quickfix window
 
-
+GIT WORKFLOW
+============
 git fetch
 ---------
 keep in sync with other branches
