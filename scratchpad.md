@@ -379,10 +379,47 @@ bundle exec rake test TEST=/test/
 
 FactoryGirl
 -----------
-FactoryGirl.
+FactoryGirl.define do
+  factory :post do
+    title 'New post'
+
+    factory :draft_post do
+      published_at nil
+    end
+
+    factory :published_post do
+      published_at Date.new(2012, 12, 3)
+        end
+      end
+
+  factory :page do
+    title 'New page'
+
+    factory :draft_page do
+      published_at nil
+    end
+
+    factory :published_page do
+      published_at Date.new(2012, 12, 3)
+    end
+  end
+end
+
+FactoryGirl.create :draft_page
+FactoryGirl.create :published_post
 
 
 references
 ----------
 http://arjanvandergaag.nl/blog/factory_girl_tips.html
 https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md
+
+Precompile Assets
+-----------------
+If you precompile on your local machine, then you can commit these generated assets into the repository and proceed with deployment. No need to compile them on production machine.
+
+But it introduces a problem: now when you change source files (coffescript / scss), the app won't pick up the changes, because it will serve precompiled files instead. rake assets:clean deletes these precompiled files.
+
+In my projects assets are precompiled as a part of deployment. Capistrano makes it very easy.
+
+Also, I never heard of rake assets:cleanup.
