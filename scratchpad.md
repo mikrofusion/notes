@@ -463,3 +463,11 @@ https://github.com/karmi/elasticsearch-paramedic
 grape, swaggar, figaro
 
 github &w=1 remove whitespace
+
+! remove last command
+
+htop
+
+ey ssh -e
+
+
