@@ -461,3 +461,5 @@ https://github.com/karmi/elasticsearch-paramedic
 
 https://github.com/karmi/elasticsearch-paramedic
 grape, swaggar, figaro
+
+github &w=1 remove whitespace
