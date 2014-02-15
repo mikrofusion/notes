@@ -471,3 +471,9 @@ htop
 ey ssh -e
 
 
+host www.google.com
+
+https://drone.io/pricing
+https://circleci.com/
+https://www.codeship.io/
+
