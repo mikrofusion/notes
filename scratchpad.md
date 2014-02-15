@@ -341,6 +341,9 @@ git push origin :<branch>
 
 git commit --amend
 
+git cherry pick commit
+======================
+git cherry-pick <SHA-hash>
 
 TDD / MiniTest
 ==============
