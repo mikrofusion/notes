@@ -480,3 +480,19 @@ https://drone.io/pricing
 https://circleci.com/
 https://www.codeship.io/
 
+http://rails-bestpractices.com/posts/15-the-law-of-demeter
+
+note:  dont use default scope
+http://en.wikipedia.org/wiki/CAP_theorem
+
+http://stevelosh.com/blog/2010/09/coming-home-to-vim/
+
+; set leader key
+nnoremap <leader>a :Ack
+
+inoremap jj <ESC>
+
+C + w, o - zoom in and out of window
+C + w, = - make splits same size
+
+http://www.viemu.com/a-why-vi-vim.html
