@@ -381,65 +381,6 @@ bundle exec rake db:test:load
 bundle exec rake test TEST=/test/
 remove-banner-from-weedmaps-65657624
 
-FactoryGirl
------------
-FactoryGirl.define do
-  factory :post do
-    title 'New post'
-
-    factory :draft_post do
-      published_at nil
-    end
-
-    factory :published_post do
-      published_at Date.new(2012, 12, 3)
-        end
-      end
-
-  factory :page do
-    title 'New page'
-
-    factory :draft_page do
-      published_at nil
-    end
-
-    factory :published_page do
-      published_at Date.new(2012, 12, 3)
-    end
-  end
-end
-
-FactoryGirl.create :draft_page
-FactoryGirl.create :published_post
-
-can be refactored as
-
-FactoryGirl.define do
-  factory :post do
-    title 'New post'
-  end
-
-  factory :page do
-    title 'New page'
-  end
-
-  trait :published do
-    published_at Date.new(2012, 12, 3)
-  end
-
-  trait :draft do
-    published_at nil
-  end
-end
-
-FactoryGirl.create :post, :published
-FactoryGirl.create :page, :draft
-
-references
-----------
-http://arjanvandergaag.nl/blog/factory_girl_tips.html
-https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md
-
 Precompile Assets
 ----------------
 If you precompile on your local machine, then you can commit these generated assets into the repository and proceed with deployment. No need to compile them on production machine.
@@ -496,3 +437,6 @@ C + w, o - zoom in and out of window
 C + w, = - make splits same size
 
 http://www.viemu.com/a-why-vi-vim.html
+
+github (git blame)
+http://mislav.uniqpath.com/2014/02/hidden-documentation/
