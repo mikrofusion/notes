@@ -1,6 +1,25 @@
 FactoryGirl
 ===========
 
+FactoryGirl.define do
+  factory :<factoryname> do
+    <attribute> <value>
+  end
+  trait :published do
+    published_at Date.new(2012, 12, 3)
+  end
+end
+
+
+
+
+
+
+
+
+
+
+
 create multiple factories via inheritance (note the draft post vs
 published post)
 ----------------------------------------------------------------
@@ -132,6 +151,7 @@ FactoryGirl.define do
     recipient
   end
 end
+
 references
 ----------
 http://arjanvandergaag.nl/blog/factory_girl_tips.html
