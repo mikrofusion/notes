@@ -101,10 +101,9 @@ FactoryGirl.define do
   factory :user do
     sequence(:email) {|n| "email#{n}@factory.com" }
     password "foobar"
-    password_confirmation "foobar"
+    password_confirmation { |u| u.password }
   end
 end
-
 
 references
 ----------
