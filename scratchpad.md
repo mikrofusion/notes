@@ -440,3 +440,14 @@ http://www.viemu.com/a-why-vi-vim.html
 
 github (git blame)
 http://mislav.uniqpath.com/2014/02/hidden-documentation/
+
+leader t
+tmux notes
+leader r
+
+g - t, g shiftT
+tabedit
+
+
+o, ;
+
