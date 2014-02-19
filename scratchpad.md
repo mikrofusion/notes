@@ -441,6 +441,8 @@ http://www.viemu.com/a-why-vi-vim.html
 github (git blame)
 http://mislav.uniqpath.com/2014/02/hidden-documentation/
 
+tmux cheat sheet
+---------------
 leader t
 tmux notes
 leader r
