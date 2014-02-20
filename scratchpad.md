@@ -453,3 +453,8 @@ tabedit
 
 o, ;
 
+================
+
+rescue boxes
+cd `bundle show jquery-ui-rails`
+
