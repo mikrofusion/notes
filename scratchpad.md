@@ -459,3 +459,6 @@ rescue boxes
 cd `bundle show jquery-ui-rails`
 
 http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/
+
+fibers in ruby:
+http://stackoverflow.com/questions/9052621/why-do-we-need-fibers
