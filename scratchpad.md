@@ -318,7 +318,8 @@ git pull --rebase
 git reset --hard
 #git checkout branch
 #git rebase develop -i
-git rebase -i develop <branchname>
+git rebase -i develop <branchname> (alternatively could do git checkout
+branch
 git push -f origin <branchname>
 
 # do pull request here
@@ -464,3 +465,7 @@ fibers in ruby:
 http://stackoverflow.com/questions/9052621/why-do-we-need-fibers
 
 Jasmine - Domain Specific Language (DSL) for Test Driven Development
+ git checkout <branch> -- <filename>
+git info <chore>
+
+https://www.relishapp.com/rspec/rspec-rails/docs/controller-specs/anonymous-controlle://www.relishapp.com/rspec/rspec-rails/docs/controller-specs/anonymous-controller
