@@ -462,3 +462,5 @@ http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord
 
 fibers in ruby:
 http://stackoverflow.com/questions/9052621/why-do-we-need-fibers
+
+Jasmine - Domain Specific Language (DSL) for Test Driven Development

@@ -289,8 +289,8 @@ ma
 :h marks
 ‘’ - move to last place before you jumped
 
-editing
 ———
+editing
 i - edit where the cursor is
 I - start insert mode at beginning of line
 
