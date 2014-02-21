@@ -223,3 +223,171 @@ How to Suspend
 CTRL-Z  Suspend Vim, like ":stop". Works in Normal and in Visual mode. In Insert and Command-line mode, the CTRL-Z is inserted as a normal character.
 :sus[pend][!] or
 :st[op][!]  Suspend Vim. If the '!' is not given and 'autowrite' is set, every buffer with changes and a file name is written out. If the '!' is given or 'autowrite' is not set, changed buffers are not written, don't forget to bring Vim back to the foreground later!
+
+
+
+0 - beginning of string 
+$ - end of string
+w - forward to beginning of word (based on iskeyword)
+W - forward to beginning or word (based on whitespace)
+e - end of word  (based on iskeyword)
+E - end of word - based on whitespace (based on whitespace)
+b - back to beginning of previous word (based on iskeyword)
+B - back to beginning of previous word (based on whitespace)
+ge - end of previous word (based on iskeyword)
+gE - end of previous word (based on whitespace)
+
+f<character> - moves to next character
+t<character> - UNTIL character. 
+F<character> - moves to next character (backwards)
+T<character> - UNTIL character.  (backwards)
+; - repeat find or until  (l; if already on the character)
+
+:help word
+
+C+F - forward  full page
+C+B - back full page
+C + U - up half page
+C + D - down half page
+H - head 
+M - middle
+L - last
+
+gg - top
+G - bottom
+
+<line number> G - go to line number
+
+* - turn the word you are on into a search term
+# - previous word as search term
+g* - same as * but match part of word 
+g# - same as # match part of word
+n - next word
+N - previous word
+
+from prompt:
+/ - find word forward
+? find word backward
+
+read more at:  : motion.txt
+
+]] - jump to next curly brace in column 0
+[[ - jump to previous curly brace in column 0
+
+][ - next curly brace
+[] - previous curly brace
+
+% - jump between matching braces
+
+matchit.vim - plugin to extend use of % operator
+
+marks
+———
+ma
+‘a
+:marks - shows all your marks 
+:h marks
+‘’ - move to last place before you jumped
+
+editing
+———
+i - edit where the cursor is
+I - start insert mode at beginning of line
+
+a - insert after current cursor position
+A - append at end of line
+
+o - insert a line below the current line
+O - insert a line above the current line
+
+x - delete chracter under cursor
+X - delete character before the cursor
+dd - delete current line
+
+. repeat the previous command
+
+dw - delete word
+de - delete to end of word
+
+cw - change word
+C - change entire line
+
+R - replace
+r - single character replace
+
+s - substitute (similar to change)
+
+y - copy
+yy - copy full line
+Y - copy full line
+p - paste after the cursor
+P - put it before the cursor
+yw - yank word
+
+J - joins a line with the line below
+gJ - joins the line without the space
+
+v - visual mode
+V - visual mode (by line)
+C + V - visual block mode
+gV - recall what was done in highlighting mode
+
+working with many files:
+———————————————
+alias g
+alias g =‘vim —remote-silent’
+
+
+:ls - list buffer
+[no name] - blank buffer when you start vim
+:ls! - show hidden buffers
+
+:buffer 22 - go to buffer 22
+:b 22 - shorthand for buffer
+
+:b# - go to previous buffer
+:bf
+:bn
+:bp
+
+:bdelete (or :bd) - delete the current buffer
+:bd <name> - delete buffer by name
+22-25bd - delete buffer by name
+%bd - delete all buffers
+
+buff do - repeat over everything you have
+taboo - repeat over everything you have
+wind - repeat over everything you have
+
+wall - write all
+
+working with multiple windows
+—————————————————
+window is a view onto a buffer.
+C + W - o - make split the full screen (lose your layouts)
+
+:bd
+
+open file
+e <file>
+
+:sp (or split) <filename>
+:C + W, x - swap two windows
+
+C + W, v - split verticle
+:vsp: split vertifle
+
+C+W, c - close window
+
+C + W, [HJKL} - move window to up down left right
+
+
+
+
+good reference:
+http://derekwyatt.org/vim/tutorials/novice/#Welcome
+http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118
+
+===============================================
+
+===============================================
