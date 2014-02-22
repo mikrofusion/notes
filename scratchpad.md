@@ -469,3 +469,8 @@ Jasmine - Domain Specific Language (DSL) for Test Driven Development
 git info <chore>
 
 https://www.relishapp.com/rspec/rspec-rails/docs/controller-specs/anonymous-controlle://www.relishapp.com/rspec/rspec-rails/docs/controller-specs/anonymous-controller
+
+redifine plus method.. one out of every 100 times will return 42gi
+
+broken window syndrome
+https://gist.github.com/dickeyxxx/8748418
