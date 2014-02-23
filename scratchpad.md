@@ -310,35 +310,41 @@ GIT WORKFLOW
 git fetch
 ---------
 keep in sync with other branches
-feature branch
-git add .
-git commit -m "commit"
-git checkout develop
-git pull --rebase
-git reset --hard
-#git checkout branch
-#git rebase develop -i
-git rebase -i develop <branchname> (alternatively could do git checkout
-branch
-git push -f origin <branchname>
 
-# do pull request here
+PREPARE FOR PULL REQUEST
+ - <on feature branch>
+ - git add <files>
+ - git commit -m "<commit comments>"
+ - git checkout <base branch>
+ - git pull --rebase
+ - git reset --hard
+ - git rebase -i <base branch> <feature branch>
+    (alternatively could do:
+      "git checkout <feature branch>"
+      "git rebase <feature branch> -i"
+    )
+ - git push -f origin <branchname>
+DO PULL REQUEST
+ - git checkout <base branch>
+ - git pull --rebase
+ - git reset --hard
+ - git merge <feature branch> --no-ff
+NOTE A:  POTENTIAL FOR OTHER COMMITS TO OCCUR HERE
+ - git push
+NOTE:  IF AN ERROR OCCURS DUE TO A CHANGE ON BASE BRANCH INSERT NOTE B
+DELETE BRANCH
+ - git push origin :<feature branch>
 
-git checkout develop
-git merge feature --no-ff
-    <-- potetnial for other commits here
-git push
-    <--- would get error here
+NOTE B:
+ - git reset --hard (alternatively "git reset HEAD")
+ - git pull
+ - git merge <feature branch>
+ - git push
+
+
+
 =========================
-if develop change
-git reset --hard (or head)
-git pull
-git merge feature
-git push
 
-delete branch
-========================
-git push origin :<branch>
 
 git commit --amend
 
@@ -474,3 +480,24 @@ redifine plus method.. one out of every 100 times will return 42gi
 
 broken window syndrome
 https://gist.github.com/dickeyxxx/8748418
+
+ctrl v - visual block mode
+shift i - insert
+shift a - insert (after)
+shift c - cut
+p - put
+d - delete
+shift r <key> - replace with key
+o - move cursor
+
+git branching 
+http://nvie.com/posts/a-successful-git-branching-model/
+###################
+#####      ########
+#####      ########
+#####      ########
+###################
+###################
+###################
+###################
+###################
