@@ -481,6 +481,12 @@ redifine plus method.. one out of every 100 times will return 42gi
 broken window syndrome
 https://gist.github.com/dickeyxxx/8748418
 
+git branching
+http://nvie.com/posts/a-successful-git-branching-model/
+
+VIM
+visual block mode
+-----------------
 ctrl v - visual block mode
 shift i - insert
 shift a - insert (after)
@@ -490,8 +496,13 @@ d - delete
 shift r <key> - replace with key
 o - move cursor
 
-git branching 
-http://nvie.com/posts/a-successful-git-branching-model/
+folding
+-------
+zi - enable / disable folding
+zi/zj - move between folds
+
+
+
 ###################
 #####      ########
 #####      ########
@@ -501,3 +512,12 @@ http://nvie.com/posts/a-successful-git-branching-model/
 ###################
 ###################
 ###################
+
+
+rspec example
+http://betterspecs.org/
+
+OJ - JSON ENCODER
+
+
+DataMapper
