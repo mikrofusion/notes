@@ -521,3 +521,11 @@ OJ - JSON ENCODER
 
 
 DataMapper
+
+require "{RAILS_ROOT/imports/blah.rb}`
+executing commands in ruby
+http://rubyquicktips.com/post/5862861056/execute-shell-commands
+
+df -h, /etc/mtab, :x
+
+confreaks
