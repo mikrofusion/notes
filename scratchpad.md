@@ -508,11 +508,6 @@ zi/zj - move between folds
 #####      ########
 #####      ########
 ###################
-###################
-###################
-###################
-###################
-
 
 rspec example
 http://betterspecs.org/
@@ -527,5 +522,5 @@ executing commands in ruby
 http://rubyquicktips.com/post/5862861056/execute-shell-commands
 
 df -h, /etc/mtab, :x
-
+reload - `mount -a`
 confreaks
