@@ -524,3 +524,7 @@ http://rubyquicktips.com/post/5862861056/execute-shell-commands
 df -h, /etc/mtab, :x
 reload - `mount -a`
 confreaks
+
+build - persist in memory, dont save unless.save is called
+create - persist in database
+lazy loading / eager loading
