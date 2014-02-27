@@ -527,4 +527,31 @@ confreaks
 
 build - persist in memory, dont save unless.save is called
 create - persist in database
-lazy loading / eager loading
+lazy loading / eager loadinijg
+
+Benchmark.measure
+
+livescript
+
+gulp / livereload
+http://travismaynard.com/writing/no-need-to-grunt-take-a-gulp-of-fresh-air
+
+logstash
+logly
+http://youmightnotneedjquery.com/
+
+pow.cx
+ curl get.pow.cx | sh
+~/.pow $ ln -s ~/programming/project
+~/.pow $ open http://project.dev
+
+marvel - elasticsearch
+socialpack
+tire
+
+
+
+
+To reload elasticsearch after an upgrade:
+    launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.elasticsearch.plist
+    launchctl load ~/Library/LaunchAgents/homebrew.mxcl.elasticsearch.plist
