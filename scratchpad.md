@@ -591,3 +591,13 @@ iced coffee script
 <- (
 vim tmux navigor
 
+vim buffer switching
+':ls' + ':bn'/':bp' + ':b <part-of-name>'
+map <Leader>a :bprev<Return>
+map <Leader>s :bnext<Return>
+map <Leader>d :bd<Return>
+map <Leader>f :b 
+Ctrl-w s and Ctrl-w v to split the current window
+Ctrl-6 to switch back and forth between two buffers in the same window.
+
+shift j = join line
