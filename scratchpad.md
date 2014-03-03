@@ -601,3 +601,11 @@ Ctrl-w s and Ctrl-w v to split the current window
 Ctrl-6 to switch back and forth between two buffers in the same window.
 
 shift j = join line
+
+
+------
+new vim settup
+ctrl jkl; (move between panes)
+ctrl n, p (both between screens)
+[, ] - b  (move between buffers)
+
