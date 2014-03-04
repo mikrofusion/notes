@@ -609,3 +609,8 @@ ctrl jkl; (move between panes)
 ctrl n, p (both between screens)
 [, ] - b  (move between buffers)
 
+
+-------
+ansible
+gulp
+
