@@ -614,3 +614,4 @@ ctrl n, p (both between screens)
 ansible
 gulp
 
+chsh -s /usr/local/bin/fish
