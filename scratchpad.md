@@ -615,3 +615,8 @@ ansible
 gulp
 
 chsh -s /usr/local/bin/fish
+chsh -s /bin/bash
+
+
+git show --name-only <commit>
+A
