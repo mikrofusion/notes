@@ -619,4 +619,11 @@ chsh -s /bin/bash
 
 
 git show --name-only <commit>
+
+
+If you have them split vertically C-wJ to move one to the bottom
+
+If you have them split horizontally C-wL to move one to the right
+
+To rotate in a 'column' or 'row' of split windows, C-wC-r
 A
