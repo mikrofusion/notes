@@ -627,3 +627,13 @@ If you have them split horizontally C-wL to move one to the right
 
 To rotate in a 'column' or 'row' of split windows, C-wC-r
 A
+
+
+http://famo.us/
+
+http://codepen.io/befamous/pen/kbxnH
+
+http://codepen.io/befamous/pen/EflBC
+
+http://codepen.io/befamous/pen/yGCHs
+http://www.oodesign.com/decorator-pattern-gui-example-java-sourcecode.html
