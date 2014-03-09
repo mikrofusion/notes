@@ -652,4 +652,5 @@ directives
     A
     A
     B
-    
+create directory if not exists
+    :!mkdir %:p:h
