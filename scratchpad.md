@@ -637,3 +637,19 @@ http://codepen.io/befamous/pen/EflBC
 
 http://codepen.io/befamous/pen/yGCHs
 http://www.oodesign.com/decorator-pattern-gui-example-java-sourcecode.html
+o=
+http://blog.elpassion.com/ruby-gotchas/
+angular
+directives
+ - data-ng-app = “”
+ or 
+ data ng-app
+
+  filter
+  | filter:name | orderbyL
+
+    A
+    A
+    A
+    B
+    
