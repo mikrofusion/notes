@@ -639,7 +639,9 @@ http://codepen.io/befamous/pen/yGCHs
 http://www.oodesign.com/decorator-pattern-gui-example-java-sourcecode.html
 o=
 http://blog.elpassion.com/ruby-gotchas/
+
 angular
+-------
 directives
  - data-ng-app = “”
  or 
@@ -648,9 +650,7 @@ directives
   filter
   | filter:name | orderbyL
 
-    A
-    A
-    A
-    B
+-----------
+
 create directory if not exists
     :!mkdir %:p:h
