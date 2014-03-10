@@ -391,3 +391,274 @@ http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut
 ===============================================
 
 ===============================================
+
+
+
+
+VIM (with Janus)
+----------------
+<leader> b - open buffer
+space / C + space - move forward back through buffer list
+
+C + W, o - zoom in or out on current window
+
+<leader> + r - run all tests
+<leader> + R - run closest spec
+
+0 - beginning of string 
+$ - end of string
+w - forward to beginning of word (based on iskeyword)
+W - forward to beginning or word (based on whitespace)
+e - end of word  (based on iskeyword)
+E - end of word - based on whitespace (based on whitespace)
+b - back to beginning of previous word (based on iskeyword)
+B - back to beginning of previous word (based on whitespace)
+ge - end of previous word (based on iskeyword)
+gE - end of previous word (based on whitespace)
+
+f<character> - moves to next character
+t<character> - UNTIL character. 
+F<character> - moves to next character (backwards)
+T<character> - UNTIL character.  (backwards)
+; - repeat find or until  (l; if already on the character)
+
+:help word
+
+C+F - forward  full page
+C+B - back full page
+C + U - up half page
+C + D - down half page
+H - head
+M - middle
+L - last
+
+gg - top
+G - bottom
+
+<line number> G - go to line number
+
+* - turn the word you are on into a search term
+# - previous word as search term
+g\* - same as * but match part of word
+g# - same as # match part of word
+n - next word
+N - previous word
+
+from prompt:
+/ - find word forward
+? find word backward
+
+read more at:  : motion.txt
+
+]] - jump to next curly brace in column 0
+[[ - jump to previous curly brace in column 0
+
+][ - next curly brace
+[] - previous curly brace
+
+% - jump between matching braces
+
+matchit.vim - plugin to extend use of % operator
+
+marks
+———
+ma
+‘a
+:marks - shows all your marks 
+:h marks
+‘’ - move to last place before you jumped
+
+editing
+———
+i - edit where the cursor is
+I - start insert mode at beginning of line
+
+a - insert after current cursor position
+A - append at end of line
+
+o - insert a line below the current line
+O - insert a line above the current line
+
+x - delete chracter under cursor
+X - delete character before the cursor
+dd - delete current line
+
+. repeat the previous command
+
+dw - delete word
+de - delete to end of word
+
+cw - change word
+C - change entire line
+
+R - replace
+r - single character replace
+
+s - substitute (similar to change)
+
+y - copy
+yy - copy full line
+Y - copy full line
+p - paste after the cursor
+P - put it before the cursor
+yw - yank word
+
+J - joins a line with the line below
+gJ - joins the line without the space
+
+v - visual mode
+V - visual mode (by line)
+C + V - visual block mode
+gV - recall what was done in highlighting mode
+
+working with many files:
+———————————————
+alias g
+alias g =‘vim —remote-silent’
+
+
+:ls - list buffer
+[no name] - blank buffer when you start vim
+:ls! - show hidden buffers
+
+:buffer 22 - go to buffer 22
+:b 22 - shorthand for buffer
+
+:b# - go to previous buffer
+:bf
+:bn
+:bp
+
+:bdelete (or :bd) - delete the current buffer
+:bd <name> - delete buffer by name
+22-25bd - delete buffer by name
+%bd - delete all buffers
+
+buff do - repeat over everything you have
+taboo - repeat over everything you have
+wind - repeat over everything you have
+
+wall - write all
+
+working with multiple windows
+—————————————————
+window is a view onto a buffer.
+C + W - o - make split the full screen (lose your layouts)
+
+:bd
+
+open file
+e <file>
+
+:sp (or split) <filename>
+:C + W, x - swap two windows
+
+C + W, v - split verticle
+:vsp: split vertifle
+
+C+W, c - close window
+
+C + W, [HJKL} - move window to up down left right
+
+
+
+
+good reference:
+http://derekwyatt.org/vim/tutorials/novice/#Welcome
+http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118
+
+===============================================
+
+===============================================
+\ ci - comment / uncomment line (NERDcommander)
+\ cc - same as above
+
+search
+----
+/ fef - reindent selected files
+/ b - show buffers
+[ ] b - swap buffers
+
+<leader> n - show or hide side panel
+<leader> b - show buffers
+
+
+resize pane
+-----------
+C + w, + -
+or
+let &winheight = &lines * 7 / 10
+
+/(word) - search for word
+in this mode press n and N to move forward and backward
+type space to clear highlighting  (custom due to vimrc)
+
+HML - move to top, middle, and bottom of screen
+() - move up or down one sentence
+{} - move up or down one paragraph
+gg - go to beginning of file
+<num>, G - go to line number
+% - jump between corresponding item e.gg { -> } or ( -> )
+
+u - undo
+C + R - redo
+
+i - insert
+a - append
+
+dd - delete line
+dw - delete word
+
+$ - move to end of line
+^ - move to beginning of line
+
+v - visual mode (select)
+V - select line
+
+C-W + W - change between split windows
+C-W + [hjkl] - navigate between split windows
+
+b - prev word
+w - next word
+
+select line + C + [jk] - move line up or down
+
+C + p - fuzzy file finder
+
+
+C + z - suspend shell
+fg - bring the suspended shell back to vim
+
+You start recording by q<letter> and you can end it by typing q again.
+
+Recording is a really useful feature of Vim.
+
+It records everything you type. You can then replay it simply by typing @<letter>. Record search, movement, replacement...
+
+One of the best feature of Vim IMHO.
+
+select all
+----------
+ggvG
+
+GIT
+---
+GIT integration:
+	•	<leader>gb maps to :Gblame<CR>
+	•	<leader>gs maps to :Gstatus<CR>
+	•	<leader>gd maps to :Gdiff<CR>
+	•	<leader>gl maps to :Glog<CR>
+	•	<leader>gc maps to :Gcommit<CR>
+	•	<leader>gp maps to :Git push<CR>
+
+Search(with Ack)
+----------------
+o    to open (same as enter)
+go   to preview file (open but maintain focus on ack.vim results)
+t    to open in new tab
+T    to open in new tab silently
+h    to open in horizontal split
+H    to open in horizontal split silently
+v    to open in vertical split
+gv   to open in vertical split silently
+q    to close the quickfix window

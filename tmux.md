@@ -195,3 +195,36 @@ install janis
 
 
 curl -Lo- https://bit.ly/janus-bootstrap | ba
+
+
+
+
+
+
+TMUX
+----
+C + ? - help
+
+C + A, C - new screen
+C + A, X - delete screen
+
+C + A, [0-9] - go to screen
+C + A, n - go to next screen
+C + A, p - go to previous screen
+
+C + A, , - remane window
+
+C + A, q (then number) - show pane numbers (and optionally move to them)
+C + A, " - split pane horizontally C + A, % - split pane vertically
+C + A, [hjkl] - pane navigation
+C + A, alt + arrow - resize pane up or down
+C + A, { } - swap panes
+C + A, C + O - swap panes
+
+C + A, t - display time
+C + A, s - display sessions
+
+C + A then [ to enter copy mode, then four arrow keys to move, even paste
+the visible point, which is great for scrolling--I don't use it much for
+copying/pasting.
+
