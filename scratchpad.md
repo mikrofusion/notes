@@ -368,3 +368,11 @@ http://www.oodesign.com/
 
 
 http://mathworld.wolfram.com/BuffonsNeedleProblem.html
+
+
+git diff --name-only
+
+
+git diff --name-only HEAD~1
+
+http://bigocheatsheet.com/
