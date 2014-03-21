@@ -379,3 +379,6 @@ http://bigocheatsheet.com/
 
 
 coderpad.io
+
+http://www.elasticsearch.org/blog/elasticsearch-definitive-guide/
+
