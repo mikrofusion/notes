@@ -403,3 +403,6 @@ This may be wanted after using :set noignorecase to make searches case sensitive
 :%s/foo/bar/gcI
 Change each 'foo' (case sensitive) to 'bar'; ask for confirmation.
 This may be wanted after using :set ignorecase to make searches case insensitive.
+
+
+http://www.wei-wang.com/ExplainGitWithD3/#
