@@ -406,3 +406,8 @@ This may be wanted after using :set ignorecase to make searches case insensitive
 
 
 http://www.wei-wang.com/ExplainGitWithD3/#
+
+
+http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/
+o
+
