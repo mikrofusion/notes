@@ -411,3 +411,12 @@ http://www.wei-wang.com/ExplainGitWithD3/#
 http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/
 o
 
+
+HTTP Codes
+500 - internal server error
+502 - bad gateway - server recieved an invalid response from anothe rserver it was assessing while
+attempting to load the page
+503 - service unavailable
+
+
+
