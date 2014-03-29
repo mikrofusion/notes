@@ -439,3 +439,6 @@ edit_post GET    /posts/:id/edit(.:format) posts#edit
           PUT    /posts/:id(.:format)      posts#update
           DELETE /posts/:id(.:format)      posts#destroy
      root        /                         welcome#index
+
+
+curl --data "latitude=100&longitude=101" localhost:3000/smokes
