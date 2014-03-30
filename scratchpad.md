@@ -442,3 +442,7 @@ edit_post GET    /posts/:id/edit(.:format) posts#edit
 
 
 curl --data "latitude=100&longitude=101" localhost:3000/smokes
+
+
+
+http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html
