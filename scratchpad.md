@@ -457,3 +457,5 @@ go
 http://en.wikipedia.org/wiki/Dart_(programming_language)
 
 https://www.codefellows.org/blogs/complete-list-of-javascript-tools
+
+GIT_COMMITTER_DATE="`date`" git commit --amend --date "`date`"
