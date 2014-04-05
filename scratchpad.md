@@ -463,3 +463,7 @@ GIT_COMMITTER_DATE="`date`" git commit --amend --date "`date`"
 
 replace in vim
 s/<word>/<replace>/gc
+
+
+history| grep <command>
+!<number>
