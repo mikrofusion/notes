@@ -467,3 +467,8 @@ s/<word>/<replace>/gc
 
 history| grep <command>
 !<number>
+
+http://blog.carbonfive.com/2011/09/28/destructuring-assignment-in-coffeescript/
+
+
+open window in new tab :tabedit %<CR>
