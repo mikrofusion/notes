@@ -472,3 +472,8 @@ http://blog.carbonfive.com/2011/09/28/destructuring-assignment-in-coffeescript/
 
 
 open window in new tab :tabedit %<CR>
+
+http://rubydoc.info/gems/coverband/0.0.23/frames
+
+http://docs.angularjs.org/guide/directive
+
