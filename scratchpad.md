@@ -477,3 +477,4 @@ http://rubydoc.info/gems/coverband/0.0.23/frames
 
 http://docs.angularjs.org/guide/directive
 
+angularman.com
