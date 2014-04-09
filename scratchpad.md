@@ -478,3 +478,5 @@ http://rubydoc.info/gems/coverband/0.0.23/frames
 http://docs.angularjs.org/guide/directive
 
 angularman.com
+
+http://techcrunch.com/2011/09/11/mindjet-buys-cohuman-to-debut-cloud-based-collaboration-tool-mindjet-connect/
