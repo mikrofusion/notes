@@ -488,3 +488,5 @@ git reset --hard origin/develop
   
  be rake -vT
  http://githooks.com/
+
+ hipchat
