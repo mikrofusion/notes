@@ -480,3 +480,11 @@ http://docs.angularjs.org/guide/directive
 angularman.com
 
 http://techcrunch.com/2011/09/11/mindjet-buys-cohuman-to-debut-cloud-based-collaboration-tool-mindjet-connect/
+
+ VERSION=20140310170918 ber db:migrate
+
+
+git reset --hard origin/develop
+  
+ be rake -vT
+ http://githooks.com/
