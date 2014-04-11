@@ -490,3 +490,10 @@ git reset --hard origin/develop
  http://githooks.com/
 
  hipchat
+ 
+
+ ctrl - r - search through history
+
+
+ tig 
+ git whatchanged
