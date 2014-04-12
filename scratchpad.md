@@ -498,3 +498,12 @@ git reset --hard origin/develop
  tig 
 http://semantic-ui.com/
  git whatchanged
+
+
+mocha:
+describe('gulp-obfuscate', function() {
+  describe('when given an empty input buffer', function() {
+    it('does nothing', function(done) {
+      expect_equals('', '', done);
+    });
+  });
