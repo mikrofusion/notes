@@ -507,3 +507,6 @@ describe('gulp-obfuscate', function() {
       expect_equals('', '', done);
     });
   });
+
+
+swap windows vim... c-w + r
