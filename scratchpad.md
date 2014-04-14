@@ -510,3 +510,22 @@ describe('gulp-obfuscate', function() {
 
 
 swap windows vim... c-w + r
+
+Named groups in regex:  http://stackoverflow.com/questions/628556/returning-only-part-of-match-from-regular-expression
+I like to use named groups:
+
+Match m = Regex.Match("User Name:first.sur", @"User Name:(?<name>\w+\.\w+)");
+if(m.Success)
+{
+   string name = m.Groups["name"].Value;
+}
+Putting the ?<something> at the beginning of a group in parentheses (e.g. (?<something>...)) allows you to get the value from the match using something as a key (e.g. from m.Groups["something"].Value)
+
+If you didn't want to go to the trouble of naming your groups, you could say
+
+Match m = Regex.Match("User Name:first.sur", @"User Name:(\w+\.\w+)");
+if(m.Success)
+{
+   string name = m.Groups[1].Value;
+}
+and just get the first thing that matches. (Note that the first parenthesized group is at index 1; the whole expression that matches is at index 0)
