@@ -536,3 +536,8 @@ and just get the first thing that matches. (Note that the first parenthesized gr
 ( ͡° ͜ʖ ͡°)
 
 curl -X GET http://127.0.0.1/
+o
+angular seed
+
+
+https://github.com/angular/angular-seed
