@@ -541,3 +541,6 @@ angular seed
 
 
 https://github.com/angular/angular-seed
+
+
+[http://nvie.com/posts/a-successful-git-branching-model/
