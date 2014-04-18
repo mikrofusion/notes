@@ -544,3 +544,6 @@ https://github.com/angular/angular-seed
 
 
 [http://nvie.com/posts/a-successful-git-branching-model/
+
+
+http://www.sitepoint.com/building-recipe-search-site-angular-elasticsearch/?utm_source=javascriptweekly&utm_medium=email
