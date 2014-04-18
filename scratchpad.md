@@ -547,3 +547,7 @@ https://github.com/angular/angular-seed
 
 
 http://www.sitepoint.com/building-recipe-search-site-angular-elasticsearch/?utm_source=javascriptweekly&utm_medium=email
+
+
+http://camanjs.com/
+http://camanjs.com/
