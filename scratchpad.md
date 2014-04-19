@@ -551,3 +551,56 @@ http://www.sitepoint.com/building-recipe-search-site-angular-elasticsearch/?utm_
 
 http://camanjs.com/
 http://camanjs.com/
+
+
+
+jasmine statements
+descibe( label, function(){ ... })
+group tests together
+it( label, function(){ ... })
+label individual test
+expect( actual )
+used to compare against expected values
+beforeEach­(­function(){ ... })
+run prior to each it in the describe
+afterEach­(function() { ... })
+run after each it in the describe
+xdescribe( label, functi­on(){ ... })
+skip section ( note the x )
+xit( label, function(){ ... })
+skip test ( note the x )
+ 	
+jasmine matchers
+to(Not)Be( null | true | false )
+to(Not)Equal( value )
+to(Not)Match( regex | string )
+toBeDefined()
+toBeUndefined()
+toBeNull()
+toBeTruthy()
+toBeFalsy()
+to(Not)Contain( string )
+toBeLessThan( number )
+toBeGreaterThan( number )
+toBeNaN()
+toBeCloseTo( number, precision )
+toThrow()
+Matchers can be chained with a not between the actual and assertion.
+ 	
+jasmine doubles/spies
+spyOn( obj, method­_string )
+obj.s­tub­bed­.­ca­lls
+array
+obj.s­tub­bed­.­mo­stR­ece­ntC­all
+call object
+obj.s­tub­bed.ca­lls­[0]­.­args
+array
+toHaveBeenCalled()
+toHaveBeenCalled­With( array )
+andCall­Through()
+spy and delegate to real object
+andReturn( value )
+andCall­Fake­(fu­nct­ion() { ... })
+jasmine.­cre­ate­Spy( id )
+jasmine.­cre­ate­Spy­Obj( baseName, methods[] )
+jasmine.­any( const­ructor )
