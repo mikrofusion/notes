@@ -609,7 +609,7 @@ jasmine.­any( const­ructor )
 
 http://www.railstips.org/blog/archives/2009/05/11/class-and-instance-methods-in-ruby/
 
-class methods
+CLASS METHODS
 # Way 1
 class Foo
   def self.bar
@@ -638,3 +638,33 @@ def Foo.bar
 end
 
 Foo.bar # "class method"
+
+
+INSTANCE METHODS
+# Way 1
+class Foo
+  def baz
+    puts 'instance method'
+  end
+end
+
+Foo.new.baz # "instance method"
+
+# Way 2
+class Foo
+  attr_accessor :baz
+end
+
+foo = Foo.new
+foo.baz = 'instance method'
+puts foo.baz
+
+# Way 3
+class Foo; end
+
+foo = Foo.new
+def foo.bar
+  puts 'instance method'
+end
+
+Foo.new.baz # "instance method"
