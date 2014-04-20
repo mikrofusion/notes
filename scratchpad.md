@@ -604,3 +604,7 @@ andCall­Fake­(fu­nct­ion() { ... })
 jasmine.­cre­ate­Spy( id )
 jasmine.­cre­ate­Spy­Obj( baseName, methods[] )
 jasmine.­any( const­ructor )
+
+
+
+http://www.railstips.org/blog/archives/2009/05/11/class-and-instance-methods-in-ruby/
