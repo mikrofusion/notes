@@ -533,7 +533,6 @@ and just get the first thing that matches. (Note that the first parenthesized gr
 
 
 
-( ͡° ͜ʖ ͡°)
 
 curl -X GET http://127.0.0.1/
 o
@@ -673,3 +672,6 @@ Foo.new.baz # "instance method"
 http://regexr.com/335fm
 
 http://stackoverflow.com/questions/10889972/regex-grouping-returns-only-the-last-match
+
+
+( ͡° ͜ʖ ͡°)
