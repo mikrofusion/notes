@@ -668,3 +668,8 @@ def foo.bar
 end
 
 Foo.new.baz # "instance method"
+
+
+http://regexr.com/335fm
+
+http://stackoverflow.com/questions/10889972/regex-grouping-returns-only-the-last-match
