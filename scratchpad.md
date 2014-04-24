@@ -681,3 +681,6 @@ http://flockwith.me/
 
 
 bower
+
+set no-paste
+set paste
