@@ -690,3 +690,6 @@ twitter 2000 follower limit
 
 http://stackoverflow.com/questions/23036101/rails-api-angularjs-websocket-rails-gem
 p
+
+
+http://www.devthought.com/2012/02/17/npm-tricks/
