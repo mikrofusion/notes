@@ -693,3 +693,9 @@ p
 
 
 http://www.devthought.com/2012/02/17/npm-tricks/
+
+http://blog.nodejs.org/2012/02/27/managing-node-js-dependencies-with-shrinkwrap/
+o
+
+http://stackoverflow.com/questions/13573204/psql-could-not-connect-to-server-no-such-file-or-directory-mac-os-x
+
