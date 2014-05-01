@@ -699,3 +699,6 @@ o
 
 http://stackoverflow.com/questions/13573204/psql-could-not-connect-to-server-no-such-file-or-directory-mac-os-x
 https://www.npmjs.org/package/gulp-obfuscate
+
+
+http://www.codeproject.com/Articles/380748/Inversion-of-Control-Overview-with-Examples
