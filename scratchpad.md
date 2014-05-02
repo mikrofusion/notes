@@ -702,3 +702,6 @@ https://www.npmjs.org/package/gulp-obfuscate
 
 
 http://www.codeproject.com/Articles/380748/Inversion-of-Control-Overview-with-Examples
+
+
+foreman
