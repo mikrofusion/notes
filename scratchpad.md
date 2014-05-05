@@ -708,3 +708,4 @@ foreman
 
 
 brew install mtr
+sudo /usr/local/sbin/mtr
