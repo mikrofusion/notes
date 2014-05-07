@@ -709,3 +709,10 @@ foreman
 
 brew install mtr
 sudo /usr/local/sbin/mtr
+cyberduck
+
+
+git merge-base HEAD origin/develop
+
+
+http://emojicons.com/popular
