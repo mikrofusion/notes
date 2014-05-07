@@ -716,3 +716,6 @@ git merge-base HEAD origin/develop
 
 
 http://emojicons.com/popular
+
+
+http://www.sitepoint.com/practical-guide-angularjs-directives-part-two/
