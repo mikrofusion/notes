@@ -722,3 +722,7 @@ http://www.sitepoint.com/practical-guide-angularjs-directives-part-two/
 
 
 http://globaldev.co.uk/2014/05/ruby-2-1-in-detail/
+
+
+bundle open <gem>
+bundle exec gem presitne <gem>
