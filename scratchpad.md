@@ -726,3 +726,9 @@ http://globaldev.co.uk/2014/05/ruby-2-1-in-detail/
 
 bundle open <gem>
 bundle exec gem presitne <gem>
+
+
+syncronize panes tmux
+
+
+http://barrister.bitmechanic.com/
