@@ -752,3 +752,6 @@ console.log(
 ('forEach' in a) != 
 (function() { for (var i in a) { return true; } })()
 );
+
+
+http://shapeshed.com/command-line-utilities-with-nodejs/
