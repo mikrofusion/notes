@@ -734,3 +734,21 @@ syncronize panes tmux
 http://barrister.bitmechanic.com/
 
 http://eerolanguage.org/code_sample/index.html
+
+
+var a = [];
+
+if ('forEach' in a) { console.log('forEach in a'); }
+
+for (var i in a) { console.log(a + 'in a'); }
+
+
+
+
+
+var a = [];
+
+console.log(
+('forEach' in a) != 
+(function() { for (var i in a) { return true; } })()
+);
