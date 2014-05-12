@@ -755,3 +755,7 @@ console.log(
 
 
 http://shapeshed.com/command-line-utilities-with-nodejs/
+
+
+
+http://www.wired.com/2014/05/the-world-of-computer-go/
