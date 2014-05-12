@@ -759,3 +759,30 @@ http://shapeshed.com/command-line-utilities-with-nodejs/
 
 
 http://www.wired.com/2014/05/the-world-of-computer-go/
+
+
+http://www.lgtm.in/i/LeE1
+http://memecrunch.com/meme/2TFSB/lgtm/image.png
+http://www.quickmeme.com/meme/35f0vs
+http://i.imgur.com/iz9RzZo.gif
+https://raw.githubusercontent.com/mattt/AnimatedGIFImageSerialization/master/Example/Animated%20GIF%20Example/animated.gif
+
+
+http://www.lgtm.in/g
+http://i.qkme.me/3ub75f.jpg
+http://www.lgtm.in/i/nrJ1
+
+http://www.lgtm.in/i/8mjwSxWNp
+
+http://media0.giphy.com/media/LeYFkniJST8wo/giphy.gif
+
+http://www.lgtm.in/i/sw5fljamq
+http://i.imgur.com/v9wvB.gif
+http://www.lgtm.in/i/PrW1
+https://f.cloud.github.com/assets/1280540/336152/f4950348-9c9f-11e2-8b3d-a569a4cbcb73.jpg
+
+http://i1.kym-cdn.com/photos/images/newsfeed/000/254/655/849.gif
+http://www.lgtm.in/i/oyL90ZF3q
+http://www.lgtm.in/i/kmsAjwEUs
+
+[![LGTM](http://www.lgtm.in/p/axKnMLtbq)](http://www.lgtm.in/i/axKnMLtbq)
