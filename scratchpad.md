@@ -786,3 +786,23 @@ http://www.lgtm.in/i/oyL90ZF3q
 http://www.lgtm.in/i/kmsAjwEUs
 
 [![LGTM](http://www.lgtm.in/p/axKnMLtbq)](http://www.lgtm.in/i/axKnMLtbq)
+
+
+
+#!/bin/bash
+
+figlist | while read font
+do
+        figlet -f $font "$font"
+
+done
+
+
+#!/bin/bash
+
+while [ 1 ];
+do
+        clear
+        date +%r | figlet
+        sleep 1
+done
