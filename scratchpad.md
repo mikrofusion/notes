@@ -806,3 +806,10 @@ do
         date +%r | figlet
         sleep 1
 done
+
+
+member do
+end
+collection do
+end
+http://guides.rubyonrails.org/routing.html
