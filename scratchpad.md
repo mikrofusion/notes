@@ -813,3 +813,8 @@ end
 collection do
 end
 http://guides.rubyonrails.org/routing.html
+
+
+
+
+https://www.youtube.com/watch?v=YKm0v_weFZs
