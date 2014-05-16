@@ -818,3 +818,6 @@ http://guides.rubyonrails.org/routing.html
 
 
 https://www.youtube.com/watch?v=YKm0v_weFZs
+
+
+http://stackoverflow.com/questions/4269922/permission-denied-publickey-when-deploying-heroku-code-fatal-the-remote-end
