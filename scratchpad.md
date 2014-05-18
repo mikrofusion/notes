@@ -828,3 +828,13 @@ http://cachemonet.com/
 
 
 jekyll
+
+
+https://help.github.com/articles/setting-up-a-custom-domain-with-github-page://help.github.com/articles/setting-up-a-custom-domain-with-github-pages
+
+
+egrep -i "^.is" /usr/share/dict/words | more
+o
+ Keybase.io. 
+
+http://www.emojitracker.com/
