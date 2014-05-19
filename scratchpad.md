@@ -841,3 +841,4 @@ http://www.emojitracker.com/
 
 
 js2coffee
+http://onehungrymind.com/angularjs-sticky-notes-pt-2-isolated-scope/
