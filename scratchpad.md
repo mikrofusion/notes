@@ -847,3 +847,7 @@ http://onehungrymind.com/angularjs-sticky-notes-pt-2-isolated-scope/
 http://repl.cc/
 
 http://www.thinkster.io/angularjs/KnxWvHUW64/angularjs-understanding-isolate-scope
+
+
+http://developer.marvel.com/
+http://daneden.github.io/animate.css/
