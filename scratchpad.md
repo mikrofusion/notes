@@ -851,3 +851,6 @@ http://www.thinkster.io/angularjs/KnxWvHUW64/angularjs-understanding-isolate-sco
 
 http://developer.marvel.com/
 http://daneden.github.io/animate.css/
+
+
+http://www.reactiongifs.com/tag/hell-yes/page/3/
