@@ -854,3 +854,6 @@ http://daneden.github.io/animate.css/
 
 
 http://www.reactiongifs.com/tag/hell-yes/page/3/
+
+named functions vs anonymous functions
+bluebird vs q for promises
