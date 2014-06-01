@@ -905,3 +905,4 @@ http://javascriptissexy.com/understand-javascript-closures-with-ease/
 rubyrags.com
 
 
+http://jekyllrb.com/

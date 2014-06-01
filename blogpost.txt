@@ -1,0 +1,31 @@
+"If you live in the JavaScript world long enough, eventually you or someone you love will be effected by callback hell." - Mike Groseclose
+
+Part1:  Background
+Javascript treats functions as first class citizens, which means that functions can now be treated like any other variables.  
+
+Having first-class functions allows for higher order function
+
+
+Javascript applications are single threaded.
+
+
+Synchronous vs Asynchronous Programing
+
+
+When javascript code block is running, there is no other code is being ran.
+Events are asynchronous.  (click events, network responses, etc)
+
+Named Methods
+
+Promises
+
+hash = { one: 1, two: 2, three: 3}
+for var number in [1, 2, 3] {
+    for item in hash {
+           if item = number {
+                     push result, item
+                          }
+                            }
+                              
+}
+
