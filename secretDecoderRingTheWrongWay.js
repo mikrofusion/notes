@@ -7,11 +7,10 @@ function secretDecoderRing(fileSecret, fileKey) {
       fs.readFile(fileSecret, 'utf-8', function(err, secret) {
         if (!err) {
           var numbers = secret.split(' ');
-          var result = [];
-          for(var i = 0; i < numbers.length; i++) {
-            var charCode = parseInt(key) + parseInt(numbers[i]);
-            result.push(String.fromCharCode(charCode));
-          }
+          var result = numbers.map(function(num) {
+            var charCode = parseInt(key) + parseInt(num);
+            return String.fromCharCode(charCode);
+          });
           console.log(result.join(''));
         } else {
           console.log(err);
