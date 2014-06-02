@@ -1,12 +1,35 @@
-"If you live in the JavaScript world long enough, eventually you or someone you love will be effected by callback hell." - Mike Groseclose
 
-Part1:  Background
-Javascript treats functions as first class citizens, which means that functions can now be treated like any other variables.  
+If you live in the JavaScript world long enough, eventually you or someone you love will be effected by callback hell.
 
+Before explaining how to avoid callback hell, it's probably good to talk to some of the powers of javascript and why 
+callback hell exists.
+
+Part1:  Behold the power of Javascript (a background)
+-----------------------------------------------------
+
+Javascript has a few important features that allow for the creation of higher order functions:
+  The first is that functions are treated as first class objects.
+  This means that functions can be treated the same as any other object in javascript in that they can be
+  assigned to variables, passed to functions as arguments, etc.)
+
+  The second is that Javascript allows for the creation of anonymous (or unnamed) functions, which means that you can do the following:
+    named function:
+    function foo {}
+
+    unnamed (anonymous) function:
+    function() {}
+
+
+  
 Having first-class functions allows for higher order function
 
 
 Javascript applications are single threaded.
+
+
+Follow me on twitter to hear more of my random thoughts on coding, technology, and occasionally rap music.
+
+================================
 
 
 Synchronous vs Asynchronous Programing
