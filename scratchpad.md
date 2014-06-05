@@ -911,3 +911,8 @@ http://jekyllrb.com/
 http://blog.angularjs.org/2014/02/an-angularjs-style-guide-and-best.html
 o
 http://famous-bird.herokuapp.com/
+
+http://robots.thoughtbot.com/extending-rails-vim-with-custom-commands
+https://gist.github.com/crsven/5f64fad06c2aa2650615
+http://blog.angularjs.org/2014/02/an-angularjs-style-guide-and-best.html
+:
