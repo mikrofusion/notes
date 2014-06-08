@@ -918,3 +918,6 @@ http://blog.angularjs.org/2014/02/an-angularjs-style-guide-and-best.html
 :
 https://www.youtube.com/user/theActionMovieKid
 http://imgur.com/W4pd0Ji
+http://music-suite.github.io/docs/ref/
+http://gibber.mat.ucsb.edu/
+ouya
