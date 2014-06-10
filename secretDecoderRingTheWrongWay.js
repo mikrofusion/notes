@@ -24,6 +24,6 @@ function secretDecoderRing(fileSecret, fileKey) {
 
 secretDecoderRing('./secret', './key');
 
-// key: -1
-// secret: 99 102 33 116 118 115 102 33 117 112 33 101 115 106 111 108 33 122 112 118 115 33 112 119 98 109 117 106 111 102
+// input file 'key': -1
+// input file 'secret': 99 102 33 116 118 115 102 33 117 112 33 101 115 106 111 108 33 122 112 118 115 33 112 119 98 109 117 106 111 102
 // output: be sure to drink your ovaltine
