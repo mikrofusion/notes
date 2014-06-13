@@ -927,3 +927,4 @@ More info on projections here: http://robots.thoughtbot.com/extending-rails-vim-
 My current projection file here for other vim-rails users: https://gist.github.com/crsven/5f64fad06c2aa2650615
 swift:  https://developer.apple.com/swift/
 paramedic plugin.. elasticsearch
+ https://www.youtube.com/watch?v=tZWGb0HU2QM
