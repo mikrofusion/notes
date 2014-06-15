@@ -928,3 +928,5 @@ My current projection file here for other vim-rails users: https://gist.github.c
 swift:  https://developer.apple.com/swift/
 paramedic plugin.. elasticsearch
  https://www.youtube.com/watch?v=tZWGb0HU2QM
+ klout.com
+
