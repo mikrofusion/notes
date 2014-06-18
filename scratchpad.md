@@ -935,3 +935,6 @@ ghost 3.0
 http://toddmotto.com/
 http://www.hilariousgifs.com/i-did-not-expect-this/
 http://bundler.io/
+
+"Any problem in computer science can be solved by adding a layer of indirection." - David Wheeler
+http://en.wikipedia.org/wiki/David_Wheeler_(computer_scientist)
