@@ -939,3 +939,10 @@ http://bundler.io/
 "Any problem in computer science can be solved by adding a layer of indirection." - David Wheeler
 http://en.wikipedia.org/wiki/David_Wheeler_(computer_scientist)
 http://madhatted.com/2014/6/17/authentication-for-single-page-apps#.U6MYdhGUxMo.twitter
+
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+set show-all-if-ambiguous on
+set completion-ignore-case on
+
+ctrl-r
