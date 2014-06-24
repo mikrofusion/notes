@@ -956,3 +956,7 @@ trl-A returns cursor to the beginning of current line, Ctrl-E moves cursor to th
 
 http://nshipster.com/reactivecocoa/
 http://vimeo.com/98100160
+
+pi noir
+adafruit
+raspian
