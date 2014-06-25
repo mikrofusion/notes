@@ -960,3 +960,4 @@ http://vimeo.com/98100160
 pi noir
 adafruit
 raspian
+git reset --hard origin/develop
