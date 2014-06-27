@@ -963,3 +963,12 @@ raspian
 git reset --hard origin/develop
 newrelic vs monit
 airbrake vs errbit
+
+
+
+
+https://gist.github.com/adaline/7363853
+https://github.com/felixge/node-form-data
+aggritate roots
+
+
