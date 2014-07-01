@@ -975,3 +975,6 @@ aggritate roots
 https://blog.heroku.com/archives/2014/3/11/node-habits
 https://devcenter.heroku.com/
 http://boundlessgeo.com/solutions/solutions-software/postgis/
+
+https://gist.github.com/staltz/868e7e9bc2a7b8c1f754
+https://github.com/Reactive-Extensions/RxJS
