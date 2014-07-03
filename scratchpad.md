@@ -980,3 +980,6 @@ https://gist.github.com/staltz/868e7e9bc2a7b8c1f754
 https://github.com/Reactive-Extensions/RxJS
 http://blog.steveklabnik.com/posts/2011-07-03-nobody-understands-rest-or-http
 https://angel.co/nestdrop
+domain driven design
+huristics
+https://www.digitalocean.com/pricing/
