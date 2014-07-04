@@ -991,3 +991,5 @@ http://www.endalldisease.com/73-mindblowing-terence-mckenna-quotes/
 – Terence McKenna
 “My technique is don’t believe anything. If you believe in something, you are automatically precluded from believing its opposite.”
 – Terence McKenna
+“The internet is light at the end of the tunnel…it is creating a global society”
+– Terrence McKenna
