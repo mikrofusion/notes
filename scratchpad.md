@@ -987,3 +987,7 @@ https://www.digitalocean.com/pricing/
 http://www.endalldisease.com/73-mindblowing-terence-mckenna-quotes/
 “We have been to the moon, we have charted the depths of the ocean and the heart of the atom, but we have a fear of looking inward to ourselves because we sense that is where all the contradictions flow together.”
 ― Terence McKenna
+“The problem is not to find the answer, it’s to face the answer”
+– Terence McKenna
+“My technique is don’t believe anything. If you believe in something, you are automatically precluded from believing its opposite.”
+– Terence McKenna
