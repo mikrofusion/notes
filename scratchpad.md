@@ -52,6 +52,8 @@ NOTE B:
 
 =========================
 
+Lgtm
+
 
 git commit --amend
 
