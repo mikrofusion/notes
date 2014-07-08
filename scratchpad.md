@@ -995,3 +995,5 @@ http://www.endalldisease.com/73-mindblowing-terence-mckenna-quotes/
 – Terence McKenna
 “The internet is light at the end of the tunnel…it is creating a global society”
 – Terrence McKenna
+
+if value then $q.when(value) else $q.reject()
