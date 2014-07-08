@@ -998,3 +998,5 @@ http://www.endalldisease.com/73-mindblowing-terence-mckenna-quotes/
 
 if value then $q.when(value) else $q.reject()
 http://tholman.com/giflinks/
+
+http://news.rapgenius.com/albums/Heroku/Routergate
