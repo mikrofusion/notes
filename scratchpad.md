@@ -997,3 +997,4 @@ http://www.endalldisease.com/73-mindblowing-terence-mckenna-quotes/
 – Terrence McKenna
 
 if value then $q.when(value) else $q.reject()
+http://tholman.com/giflinks/
