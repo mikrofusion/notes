@@ -1000,3 +1000,6 @@ if value then $q.when(value) else $q.reject()
 http://tholman.com/giflinks/
 
 http://news.rapgenius.com/albums/Heroku/Routergate
+
+ git diff --name-only HEAD~1
+http://himera.herokuapp.com/synonym.html
