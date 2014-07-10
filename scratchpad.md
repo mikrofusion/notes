@@ -1004,3 +1004,8 @@ http://news.rapgenius.com/albums/Heroku/Routergate
  git diff --name-only HEAD~1
 http://himera.herokuapp.com/synonym.html
 https://github.com/clojure/clojurescript
+https://github.com/lukehoban/es6features
+
+
+https://github.com/atmos/heaven
+https://github.com/atmos/hubot-deploy
