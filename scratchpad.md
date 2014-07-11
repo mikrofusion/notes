@@ -1009,3 +1009,10 @@ https://github.com/lukehoban/es6features
 
 https://github.com/atmos/heaven
 https://github.com/atmos/hubot-deploy
+
+      _.forEach opts.filters, (filter) ->
+        term = {}
+        term[filter] = true
+        filters.push {term: term}
+
+https://gophercasts.io/lessons/1-getting-started-with-go
