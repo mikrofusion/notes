@@ -49,6 +49,7 @@ NOTE B:
  - git push
 
 https://gist.github.com/staltz/868e7e9bc2a7b8c1f754
+
 http://jsfiddle.net/staltz/8jFJH/59/
 =========================
 
@@ -811,6 +812,7 @@ do
 done
 
 
+
 member do
 end
 collection do
@@ -1021,3 +1023,45 @@ http://vimeo.com/68236538
 http://caniuse.com/viewport-units
 http://www.twitch.tv/
 http://reactive-extensions.github.io/RxJS/
+https://github.com/Reactive-Extensions/RxJS/tree/master/examples
+
+http://nullzzz.blogspot.com/2012/01/things-you-should-know-about-rx.html
+
+oo
+jo
+
+from:  http://danwebb.net/2006/11/3/from-the-archives-cleaner-callbacks-with-partial-application
+Now say you wanted to call a method on each of these such as toUpperCase(). You could do this:
+
+var caps = map(['a', 'b', 'c'], function(letter) {
+    return letter.toUpperCase();
+});
+But what if you find yourself wanting to call lots of methods on objects in map(). You can generalise with a partially applied function:
+
+function callMethod(method) {
+  return function(obj) {
+    return obj[method]();
+  }
+}
+This returns a function that will call the given method on any object you pass it:
+
+var upperCase = callMethod('toUpperCase');
+upperCase('a'); //=> returns 'A'
+Now you can use this for your function in map:
+
+map(['a', 'b', 'c'], callMethod('toUpperCase'));  //=> ['A', 'B', 'C']
+How elegant is that? This is just a simple example but lets get on to how this helps us with callbacks. Say we have an ajax function called request. It’s takes a url and a callback function for when it’s loaded. We want to update an element with the response:
+
+request('comment.php', function(resp) {  
+  document.getElementById('item').innerHTML = resp.responseText;
+});
+We can generalise the update callback with a curried function like this:
+
+function update(id) {
+  return function(resp) {
+    document.getElementById(id).innerHTML = resp.responseText;
+  }
+}
+Now we can write our request call like this:
+
+request('comment.php', update('item'));
