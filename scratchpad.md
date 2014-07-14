@@ -1070,3 +1070,17 @@ duck typing - 'if it looks like a duck and quacks like a duck'.. basically if it
 
 Currying refers to the process of transforming a function with multiple arity into the same function with less arity.
 http://en.wikipedia.org/wiki/Arity
+
+the prototype chain.
+
+
+Object.prototype.extends = function (parent) {    
+    for (var prop in parent) {
+        if (mixin.hasOwnProperty(prop)) {
+            this.prototype[prop] = mixin[prop];
+        }
+    }
+};
+
+o
+http://nodeup.com/eleven
