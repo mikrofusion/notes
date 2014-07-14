@@ -1065,3 +1065,8 @@ function update(id) {
 Now we can write our request call like this:
 
 request('comment.php', update('item'));
+
+duck typing - 'if it looks like a duck and quacks like a duck'.. basically if it responds to the same interfaces.
+
+Currying refers to the process of transforming a function with multiple arity into the same function with less arity.
+http://en.wikipedia.org/wiki/Arity
