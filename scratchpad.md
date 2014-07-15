@@ -1084,3 +1084,4 @@ Object.prototype.extends = function (parent) {
 
 o
 http://nodeup.com/eleven
+https://en.wikipedia.org/wiki/Thunk_(functional_programming)
