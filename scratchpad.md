@@ -1085,3 +1085,18 @@ Object.prototype.extends = function (parent) {
 o
 http://nodeup.com/eleven
 https://en.wikipedia.org/wiki/Thunk_(functional_programming)
+
+
+Lazy evaluataion in JavaScript via Thunks
+Thunks are a type of currying?
+
+add = (a, b) ->
+  () ->
+    a + b
+
+sum = a + b
+console.log sum()
+
+quadrabuzz
+
+
