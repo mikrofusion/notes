@@ -1101,3 +1101,10 @@ quadrabuzz
 
 
 https://github.com/caolan/highland
+http://synergy-project.org/
+
++# https://www.relishapp.com/rspec/rspec-rails/docs/routing-specs
+
+ +# http://jonathanhui.com/ruby-rails-3-routing
+
+javascript has function scope, not block scope
