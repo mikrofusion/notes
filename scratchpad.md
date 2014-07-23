@@ -1109,4 +1109,5 @@ http://synergy-project.org/
 
 javascript has function scope, not block scope
 breach.cc
-
+http://npmawesome.com/index.4/
+parallel hiehgarchy
