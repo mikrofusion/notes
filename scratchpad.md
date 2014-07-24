@@ -1111,3 +1111,7 @@ javascript has function scope, not block scope
 breach.cc
 http://npmawesome.com/index.4/
 parallel hiehgarchy
+http://locomotivecms.com/
+
+https://github.com/comfy/comfortable-mexican-sofa
+https://github.com/jdan/rubycards
