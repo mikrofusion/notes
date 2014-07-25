@@ -1115,3 +1115,7 @@ http://locomotivecms.com/
 
 https://github.com/comfy/comfortable-mexican-sofa
 https://github.com/jdan/rubycards
+http://www.liamneesonsarm.com/posts/rails-angularjs-html5mode-true-issues-with-links
+https://www.youtube.com/watch?v=mVN7aTqr550
+
+http://12factor.net/
