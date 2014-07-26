@@ -1119,3 +1119,16 @@ http://www.liamneesonsarm.com/posts/rails-angularjs-html5mode-true-issues-with-l
 https://www.youtube.com/watch?v=mVN7aTqr550
 
 http://12factor.net/
+
+vi passenger-docker
+http://mesos.apache.org/
+
+
+docker
+vagrant
+guard
+https://github.com/orchardup/fig
+https://www.digitalocean.com/community/tutorials/docker-explained-how-to-create-docker-containers-running-memcached
+bittorrentsync
+
+http://xgrommx.github.io/rx-book/
