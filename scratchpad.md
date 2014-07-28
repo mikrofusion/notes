@@ -1149,3 +1149,4 @@ PUT can map to both Create and Update depending on the existence of the URI used
 POST maps to Create.
 
 Correction: POST can also map to Update although it's typically used for Create. POST can also be a partial update so we don't need the proposed PATCH method.
+https://github.com/balderdashy/waterline
