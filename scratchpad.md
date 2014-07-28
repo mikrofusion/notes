@@ -1136,4 +1136,16 @@ http://xgrommx.github.io/rx-book/
 mohca bug:
 https://github.com/visionmedia/mocha/issues/911
 o
+
 https://developer.github.com/guides/getting-started/
+
+Create = PUT with a new URI
+         POST to a base URI returning a newly created URI
+Read   = GET
+Update = PUT with an existing URI
+Delete = DELETE
+PUT can map to both Create and Update depending on the existence of the URI used with the PUT.
+
+POST maps to Create.
+
+Correction: POST can also map to Update although it's typically used for Create. POST can also be a partial update so we don't need the proposed PATCH method.
