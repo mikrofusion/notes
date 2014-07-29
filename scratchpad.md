@@ -1150,3 +1150,8 @@ POST maps to Create.
 
 Correction: POST can also map to Update although it's typically used for Create. POST can also be a partial update so we don't need the proposed PATCH method.
 https://github.com/balderdashy/waterline
+http://blog.carbonfive.com/2011/02/13/a-3d-flocking-simulation-using-html5-canvas/
+https://www.varnish-cache.org/
+squid cache
+p
+immediately-invoked func­tion expres­sions (IIFEs)
