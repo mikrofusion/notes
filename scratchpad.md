@@ -1,5 +1,6 @@
 PRY
 
+
 ---
 
 
@@ -1155,3 +1156,7 @@ https://www.varnish-cache.org/
 squid cache
 p
 immediately-invoked func­tion expres­sions (IIFEs)
+http://usejsdoc.org/
+coffee examples/test.coffee --n
+
+coffee examples/test.coffee --nodejs
