@@ -1160,3 +1160,5 @@ http://usejsdoc.org/
 coffee examples/test.coffee --n
 
 coffee examples/test.coffee --nodejs
+http://giphy.com/gifs/1hiVNxD34TpC0
+figlet
