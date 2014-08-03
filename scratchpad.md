@@ -1175,3 +1175,60 @@ beforeEach
 after
 
  2 passing (7ms)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://stackoverflow.com/questions/332422/how-do-i-get-the-name-of-an-objects-type-in-javascript
+// using a named function:
+function Foo() { this.a = 1; }
+var obj = new Foo();
+(obj instanceof Object);          // true
+(obj instanceof Foo);             // true
+(obj.constructor == Foo);         // true
+(obj.constructor.name == "Foo");  // true
+
+// let's add some prototypical inheritance
+function Bar() { this.b = 2; }
+Foo.prototype = new Bar();
+obj = new Foo();
+(obj instanceof Object);          // true
+(obj instanceof Foo);             // true
+(obj.constructor == Foo);         // false
+(obj.constructor.name == "Foo");  // false
+
+
+// using an anonymous function:
+obj = new (function() { this.a = 1; })();
+(obj instanceof Object);              // true
+(obj.constructor == obj.constructor); // true
+(obj.constructor.name == "");         // true
+
+
+// using an anonymous function assigned to a variable
+var Foo = function() { this.a = 1; };
+obj = new Foo();
+(obj instanceof Object);      // true
+(obj instanceof Foo);         // true
+(obj.constructor == Foo);     // true
+(obj.constructor.name == ""); // true
+
+
+// using object literal syntax
+obj = { foo : 1 };
+(obj instanceof Object);            // true
+(obj.constructor == Object);        // true
+(obj.constructor.name == "Object"); // true
