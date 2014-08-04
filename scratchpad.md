@@ -1232,3 +1232,6 @@ obj = { foo : 1 };
 (obj instanceof Object);            // true
 (obj.constructor == Object);        // true
 (obj.constructor.name == "Object"); // true
+
+
+https://gist.github.com/coolaj86/1318304
