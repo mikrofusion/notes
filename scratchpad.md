@@ -1235,3 +1235,6 @@ obj = { foo : 1 };
 
 
 https://gist.github.com/coolaj86/1318304
+
+https://github.com/maxogden/art-of-node
+http://www.ccs.neu.edu/research/demeter/papers/law-of-demeter/oopsla88-law-of-demeter.pdf
