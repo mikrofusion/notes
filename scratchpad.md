@@ -1241,3 +1241,9 @@ http://www.ccs.neu.edu/research/demeter/papers/law-of-demeter/oopsla88-law-of-de
 https://github.com/carbonfive/functional-programming-weekly-challenge/pull/13/files
 
 http://nodejs.org/api/debugger.html
+
+https://www.npmjs.org/package/multibuffe://www.npmjs.org/package/multibuffer
+launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+
+https://www.youtube.com/watch?v=RMhCUpfwkMg&list=PL1AXWu-gGX6LNsfQ-KkeGPxL76CFONTom
