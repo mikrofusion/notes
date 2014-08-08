@@ -1247,3 +1247,10 @@ launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 
 https://www.youtube.com/watch?v=RMhCUpfwkMg&list=PL1AXWu-gGX6LNsfQ-KkeGPxL76CFONTom
+http://twistedsifter.com/2014/07/thrift-store-painting-remixes-by-david-irvine/#.U9fSdiMJic0.facebook
+node debugger;  http://vimeo.com/77870960
+http://angular-tips.com/blog/2014/03/transclusion-and-scopes/
+
+https://github.com/angular/angular.js/issues/4845
+http://stackoverflow.com/questions/20878830/angularjs-isolated-scope-for-directives-without-own-template
+https://blog.heroku.com/archives/2014/8/7/heroku-button
