@@ -1254,3 +1254,14 @@ http://angular-tips.com/blog/2014/03/transclusion-and-scopes/
 https://github.com/angular/angular.js/issues/4845
 http://stackoverflow.com/questions/20878830/angularjs-isolated-scope-for-directives-without-own-template
 https://blog.heroku.com/archives/2014/8/7/heroku-button
+
+
+
+
+
+function clone(object) {
+  function Clone() {}
+  Clone.prototype = object;
+
+  return new Clone()
+}
