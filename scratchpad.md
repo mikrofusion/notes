@@ -1265,3 +1265,12 @@ function clone(object) {
 
   return new Clone()
 }
+
+
+
+
+
+ coffee --nodejs --debug src/bacon_and_eggs.coffee
+coffee --nodejs debug src/bacon_and_eggs.coffee 
+
+https://github.com/platanus/angular-restmod
