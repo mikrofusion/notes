@@ -1274,3 +1274,6 @@ function clone(object) {
 coffee --nodejs debug src/bacon_and_eggs.coffee 
 
 https://github.com/platanus/angular-restmod
+
+http://replygif.net/255
+http://blog.carbonfive.com/2014/05/29/an-incremental-migration-from-rails-monolithic-to-microservices/
