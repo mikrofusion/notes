@@ -1277,3 +1277,7 @@ https://github.com/platanus/angular-restmod
 
 http://replygif.net/255
 http://blog.carbonfive.com/2014/05/29/an-incremental-migration-from-rails-monolithic-to-microservices/
+https://www.cs.umd.edu/class/spring2003/cmsc838p/Design/criteria.pdf
+http://www.bootply.com/73864
+
+https://smacss.com/
