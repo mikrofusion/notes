@@ -1281,3 +1281,24 @@ https://www.cs.umd.edu/class/spring2003/cmsc838p/Design/criteria.pdf
 http://www.bootply.com/73864
 
 https://smacss.com/
+
+function thisBranch {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
+}
+function blam() {
+  git push origin $(thisBranch)
+}
+function kablam() {
+  git push -f origin $(thisBranch)
+}
+
+ today = log --graph --since='1 Day Ago' --abbrev-commit --date=relative --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset'
+  l = "log --oneline --decorate --graph --pretty='%Cred%h %Cgreen%ad%Creset%x09%s%x09%Creset%C(bold)%d %an' --date=short”
+
+[alias]
+  graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%aN>%Creset'
+  rollback = reset HEAD^
+  commits = log --oneline
+  info = !git show $1 --pretty='full'
+  cherry-bomb = "!f() { git rebase -p --onto $1^ $1; }; f"
+  today = log --graph --since='1 Day Ago' --abbrev-commit --date=relative --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset'
