@@ -1302,3 +1302,8 @@ function kablam() {
   info = !git show $1 --pretty='full'
   cherry-bomb = "!f() { git rebase -p --onto $1^ $1; }; f"
   today = log --graph --since='1 Day Ago' --abbrev-commit --date=relative --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset'
+
+http://www.thinkster.io/angularjs/HNyZvDlCXO/angularjs-intro-to-bower
+
+http://stackoverflow.com/questions/16828287/what-things-can-be-injected-into-others-in-angular-js
+https://github.com/angular/angular.js/wiki/Understanding-Dependency-Injection
