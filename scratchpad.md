@@ -1311,3 +1311,5 @@ https://github.com/angular/angular.js/wiki/Understanding-Dependency-Injection
 https://www.docker.com/tryit/#4
 
 http://learnyouahaskell.com/chapters
+
+https://www.npmjs.org/package/bacon-and-eggs
