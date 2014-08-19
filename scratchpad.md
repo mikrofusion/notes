@@ -1313,3 +1313,7 @@ https://www.docker.com/tryit/#4
 http://learnyouahaskell.com/chapters
 
 https://www.npmjs.org/package/bacon-and-eggs
+
+https://github.com/baconjs/bacon.js/issues/354
+
+http://learnyouahaskell.com/learnyouahaskell.pdf
