@@ -1317,3 +1317,11 @@ https://www.npmjs.org/package/bacon-and-eggs
 https://github.com/baconjs/bacon.js/issues/354
 
 http://learnyouahaskell.com/learnyouahaskell.pdf
+
+rm -fr tmp/cache
+rm -fr public/assets
+
+http://xkcd.com/66/
+
+
+<script type="text/ng-template" id="myModalContent.html">
