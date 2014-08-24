@@ -1326,3 +1326,6 @@ http://xkcd.com/66/
 
 <script type="text/ng-template" id="myModalContent.html">
 find . -name *_java*
+
+
+http://docs.ansible.com/intro_getting_started.html#getting-started
