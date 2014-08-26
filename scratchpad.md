@@ -1331,3 +1331,6 @@ find . -name *_java*
 http://docs.ansible.com/intro_getting_started.html#getting-started
 
 quasiliteral
+https://sourcegraph.com/github.com/joyent/node/.CommonJSPackage/node/.def/commonjs/lib/readline.js/-/createInterface
+
+http://techblog.netflix.com/2014/08/announcing-scumblr-and-sketchy-search.html
