@@ -1336,3 +1336,5 @@ https://sourcegraph.com/github.com/joyent/node/.CommonJSPackage/node/.def/common
 http://techblog.netflix.com/2014/08/announcing-scumblr-and-sketchy-search.html
 http://javascriptweblog.wordpress.com/2011/05/31/a-fresh-look-at-javascript-mixins/
 http://byfat.xxx/if-hemingway-wrote-javascript
+
+http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html
