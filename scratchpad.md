@@ -1338,3 +1338,5 @@ http://javascriptweblog.wordpress.com/2011/05/31/a-fresh-look-at-javascript-mixi
 http://byfat.xxx/if-hemingway-wrote-javascript
 
 http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html
+
+http://stackoverflow.com/questions/10585683/how-do-you-edit-existing-text-and-move-the-cursor-around-in-the-terminal
