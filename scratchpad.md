@@ -1340,3 +1340,15 @@ http://byfat.xxx/if-hemingway-wrote-javascript
 http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html
 
 http://stackoverflow.com/questions/10585683/how-do-you-edit-existing-text-and-move-the-cursor-around-in-the-terminal
+
+pressEnter = (input) ->
+  # fake keyboard event.
+  event = document.createEvent("Events")
+  event.initEvent("keydown", true, true)
+  event.which = 13
+
+  input[0].dispatchEvent(event)
+
+netrunner
+
+http://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=twitter%20-%0Acommander
