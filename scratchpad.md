@@ -1352,3 +1352,10 @@ pressEnter = (input) ->
 netrunner
 
 http://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=twitter%20-%0Acommander
+http://bytes.inso.cc/talks/funjs-reactive/#/home
+
+
+
+BLOG POST
+https://github.com/npm/npm/issues/5080
+https://github.com/jashkenas/backbone/issues/1288
