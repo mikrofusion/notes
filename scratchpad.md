@@ -1359,3 +1359,5 @@ http://bytes.inso.cc/talks/funjs-reactive/#/home
 BLOG POST
 https://github.com/npm/npm/issues/5080
 https://github.com/jashkenas/backbone/issues/1288
+
+flatmap null should be flatmap once
