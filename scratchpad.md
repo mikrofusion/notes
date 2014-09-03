@@ -1361,3 +1361,5 @@ https://github.com/npm/npm/issues/5080
 https://github.com/jashkenas/backbone/issues/1288
 
 flatmap null should be flatmap once
+LG™
+http://stackoverflow.com/questions/20106712/what-are-the-differences-between-git-remote-prune-git-prune-git-fetch-prune
