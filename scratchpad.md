@@ -1363,3 +1363,7 @@ https://github.com/jashkenas/backbone/issues/1288
 flatmap null should be flatmap once
 LG™
 http://stackoverflow.com/questions/20106712/what-are-the-differences-between-git-remote-prune-git-prune-git-fetch-prune
+
+console.log process.stdout.columns
+#http://stackoverflow.com/questions/10956386/how-wide-is-the-node-js-console
+console.log process.stdout.getWindowSize()
