@@ -1367,3 +1367,5 @@ http://stackoverflow.com/questions/20106712/what-are-the-differences-between-git
 console.log process.stdout.columns
 #http://stackoverflow.com/questions/10956386/how-wide-is-the-node-js-console
 console.log process.stdout.getWindowSize()
+
+http://www.jvandemo.com/the-nitty-gritty-of-compile-and-link-functions-inside-angularjs-directives/
