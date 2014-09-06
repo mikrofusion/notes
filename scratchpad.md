@@ -1371,3 +1371,4 @@ console.log process.stdout.getWindowSize()
 http://www.jvandemo.com/the-nitty-gritty-of-compile-and-link-functions-inside-angularjs-directives/
 
 https://www.youtube.com/watch?v=-FkgOHvNAU8
+front end masters.com
