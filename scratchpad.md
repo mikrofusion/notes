@@ -1372,3 +1372,30 @@ http://www.jvandemo.com/the-nitty-gritty-of-compile-and-link-functions-inside-an
 
 https://www.youtube.com/watch?v=-FkgOHvNAU8
 front end masters.com
+
+
+
+width || (width = process.stdout.columns || 1);
+http://justjs.com/posts/npm-link-developing-your-own-npm-modules-without-tears
+https://github.com/npm/npm/issues/4005
+http://stackoverflow.com/questions/15633029/npm-no-longer-working
+
+npm link
+
+/usr/local/lib/node_modules/console-pos -> /Users/user/programming/cursor-pos
+
+╰─> npm link console-pos
+unbuild console-pos@0.0.2
+/Users/user/programming/breakwrap/node_modules/console-pos -> /usr/local/lib/node_modules/console-pos -> /Users/user/programming/cursor-pos
+
+ng-strict-di
+<div ng-app="myApp" ng-strict-di>
+
+http://bootflat.github.io/documentation.html
+doorkeeper
+
+http://thesassway.com/advanced/modular-css-typography
+http://smacss.com/
+
+http://www.dorsethouse.com/books/qsm1contents.html
+http://thesassway.com/advanced/modular-css-typography
