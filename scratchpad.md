@@ -1399,3 +1399,24 @@ http://smacss.com/
 
 http://www.dorsethouse.com/books/qsm1contents.html
 http://thesassway.com/advanced/modular-css-typography
+
+ npm install -g istanbul
+npm install jscs -g
+npm install -g ibrik
+
+
+http://codepen.io/dropside/pen/bxhke
+
+
+if (typeof Object.create !== 'function') {
+    Object.create = function (o) {
+        function F() {}
+        F.prototype = o;
+        return new F();
+    };
+}
+newObject = Object.create(oldObject);
+
+http://en.wikipedia.org/wiki/Polyfill
+
+http://pivotallabs.com/javascript-constructors-prototypes-and-the-new-keyword/
