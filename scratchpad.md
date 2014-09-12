@@ -1420,3 +1420,34 @@ newObject = Object.create(oldObject);
 http://en.wikipedia.org/wiki/Polyfill
 
 http://pivotallabs.com/javascript-constructors-prototypes-and-the-new-keyword/
+
+category theory javascript:
+
+http://jscategory.wordpress.com/
+
+
+http://datagenetics.com/blog/november12013/index.html - QR code
+
+git reminders:
+https://gist.github.com/michaelavila/f8d1ea64e911ca6bf728
+
+get current filename in vim
+
+:echo @% 
+
+If all that is wanted is to display the name of the current file, type Ctrl-G (or press 1 then Ctrl-G for the full path).
+
+When using @%, the name is displayed relative to the current directory.
+
+In insert mode, type Ctrl-R then % to insert the name of the current file.
+
+In command mode (after typing a colon), type Ctrl-R then % to insert the name of the current file. The inserted name can then be edited to create a similar name.
+
+In normal mode, type "%p to put the name of the current file after the cursor (or "%P to insert the name before the cursor).
+
+The following commands insert lines consisting of the full path of the current and alternate files into the buffer:
+
+Text Binding (Prefix: @)
+One-way Binding (Prefix: &)
+Two-way Binding (Prefix: =)
+ramsey.js
