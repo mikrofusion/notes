@@ -1471,3 +1471,20 @@ https://github.com/jsanders/angular_rails_csrf
   end
 
 http://codepen.io/lbebber/pen/ypgql - glitch
+
+
+change NPM username
+Well, you can't just change the name, but you can create a new one, and switch over to using that instead.
+
+Sign up as a new user.
+Add that user as an owner to all your projects using npm owner add <pkg> <newusername> on the command line.
+Remove the old user from all your projects using npm owner rm <pkg> <oldusername> on the command line.
+Run npm adduser and enter the credentials for the new user name.
+
+
+------------------------------get reflog
+What you want to do is to specify the sha1 of the commit you want to restore to. You can get the sha1 by examining the reflog (git reflog) and then doing
+
+git reset --hard <sha1 of desired commit>
+
+But don't wait too long... after a few weeks git will eventually see that commit as unreferenced and delete all the blobs.
