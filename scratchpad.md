@@ -1488,3 +1488,6 @@ What you want to do is to specify the sha1 of the commit you want to restore to.
 git reset --hard <sha1 of desired commit>
 
 But don't wait too long... after a few weeks git will eventually see that commit as unreferenced and delete all the blobs.
+
+
+-----------------------------
