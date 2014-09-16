@@ -1491,3 +1491,50 @@ But don't wait too long... after a few weeks git will eventually see that commit
 
 
 -----------------------------
+http://blog.plataformatec.com.br/2009/08/embracing-rest-with-mind-body-and-soul/
+
+
+window.compileTemplate = (template, scope) ->
+  compiled = undefined
+
+  inject ($compile) ->
+    compiled = $compile(template)(scope)
+    scope.$digest()
+
+  $(compiled)
+
+window.prepareTemplate = (template, scope) ->
+  el = compileTemplate template, scope
+  $('body').append(el)
+
+  afterEach -> el.remove()
+  el
+
+window.createScope = (configure) ->
+  scope = undefined
+  inject ($rootScope) ->
+    scope = $rootScope.$new()
+    configure(scope) if configure
+
+  scope
+
+https://github.com/angular-ui/bootstrap/blob/master/src/alert/test/alert.spec.js
+https://github.com/angular-ui/bootstrap/blob/master/src/buttons/test/buttons.spec.js
+
+Here are a few tips:
+
+Be sure to tell the test runner what module you are testing with beforeEach(module('myModule')).
+
+If you have external templateUrls in your directives, you'll want to somehow pre-cache them for the test runner. The test runner can't asynchronously GET templates. In bootstrap, we inject the templates into the javascript with a build step, and make each template a module. We use grunt-html2js grunt task.
+
+In your tests, use the inject helper in a beforeEach to inject $compile and $rootScope and any other services you'll need. Use var myScope = $rootScope.$new() to create a fresh scope for each test. You can do var myElement = $compile('<my-directive></my-directive>')(myScope); to create an instance of your directive, and have access to its element.
+
+If a directive creates its own scope and you want to test against it, you can get access to that directive's scope by doing var directiveScope = myElement.children().scope() - It will get the element's child (the directive itself), and get the scope for that.
+
+For testing timeouts, you can use $timeout.flush() to end all pending timeouts.
+
+For testing promises, remember that when you resolve a promise, it will not call its then callbacks until the next digest. So in tests you have to do this a lot: deferred.resolve(); scope.$apply();.
+
+You can find tests for directives of varying complexity in the bootstrap repo. Just look in src/{directiveName}/test/.
+
+http://javascriptplayground.com/blog/2013/12/es5-getters-setters/
