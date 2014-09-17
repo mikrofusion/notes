@@ -1538,3 +1538,6 @@ For testing promises, remember that when you resolve a promise, it will not call
 You can find tests for directives of varying complexity in the bootstrap repo. Just look in src/{directiveName}/test/.
 
 http://javascriptplayground.com/blog/2013/12/es5-getters-setters/
+
+NodeUp
+http://nodeup.com/seventytwo
