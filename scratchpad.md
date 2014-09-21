@@ -1543,3 +1543,7 @@ NodeUp
 http://nodeup.com/seventytwo
 
 https://github.com/purescript/purescript
+
+=========================================
+
+browserify
