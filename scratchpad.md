@@ -1547,3 +1547,7 @@ https://github.com/purescript/purescript
 =========================================
 
 browserify
+
+============================================
+http://www.mobileroadie.com/
+http://www.goodbarber.com/
