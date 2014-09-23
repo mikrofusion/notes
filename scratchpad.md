@@ -1551,3 +1551,14 @@ browserify
 ============================================
 http://www.mobileroadie.com/
 http://www.goodbarber.com/
+
+http://danyi.me/
+
+--------------------------------------------
+* http://martinfowler.com/bliki/IntegrationDatabase.html
+* http://martinfowler.com/bliki/ApplicationDatabase.html
+* http://martinfowler.com/bliki/ReportingDatabase.html
+
+Basically, Rails has an Application Database architecture (for more flexibility) but many enterprises use an Integration Database architecture (for more consistency across apps) and to work together they need well-defined interfaces
+
+--------------------------------------------
