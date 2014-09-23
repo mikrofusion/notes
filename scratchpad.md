@@ -1562,3 +1562,5 @@ http://danyi.me/
 Basically, Rails has an Application Database architecture (for more flexibility) but many enterprises use an Integration Database architecture (for more consistency across apps) and to work together they need well-defined interfaces
 
 --------------------------------------------
+
+https://coderwall.com/
