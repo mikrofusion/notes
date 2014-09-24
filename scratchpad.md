@@ -1564,3 +1564,5 @@ Basically, Rails has an Application Database architecture (for more flexibility)
 --------------------------------------------
 
 https://coderwall.com/
+
+https://www.tdameritrade.com
