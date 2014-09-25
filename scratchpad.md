@@ -1566,3 +1566,38 @@ Basically, Rails has an Application Database architecture (for more flexibility)
 https://coderwall.com/
 
 https://www.tdameritrade.com
+
+================================================
+angular slim
+================================================
+add bundle exec to any node modules ran in the rails context (i.e. circle.yml)
+
+karma.angular.conf
+ preprocessors: {		     preprocessors: {
+       '**/*.coffee': ['coffee'],		       '**/*.coffee': ['coffee'],
+-      '**/*.slim': ['slim', 'ng-html2js'],		
+       '**/*.html': ['ng-html2js']		       '**/*.html': ['ng-html2js']
+     },
+
+files: [
+  'app/assets/javascripts/ng/templates/**/*.html.slim',
+
+ngHtml2JsPreprocessor: {
+ stripSufix: '.slim',
+
+ "karma-slim-preprocessor": "0.0.4",
+
+# in your specs
+# helper until https://github.com/karma-runner/karma-ng-html2js-preprocessor/pull/38 is merged
+window.slimTemplateCache = (slimFile) ->
+  inject ($templateCache) ->
+    htmlFile = slimFile.replace('\.slim', '')
+
+    tplt = $templateCache.get slimFile
+    $templateCache.remove slimFile
+    $templateCache.put(htmlFile, tplt)
+
+
+<L><G T="M"></G></T>
+
+https://gitter.im/
