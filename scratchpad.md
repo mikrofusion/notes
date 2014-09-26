@@ -1605,3 +1605,10 @@ https://gitter.im/
 
 http://maps.stamen.com/#terrain/2/0.0/-989.2
 https://www.mapbox.com/blog/building-mapbox-fast-map-hosting-stack/
+
+
+http://blog.newrelic.com/2014/08/15/node-js-frameworks-hapi-js-restify-geddy/
+
+http://strongloop.com/strongblog/compare-express-restify-hapi-loopback/
+
+http://cukes.info/
