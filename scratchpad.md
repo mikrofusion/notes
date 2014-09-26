@@ -1601,3 +1601,7 @@ window.slimTemplateCache = (slimFile) ->
 <L><G T="M"></G></T>
 
 https://gitter.im/
+
+
+http://maps.stamen.com/#terrain/2/0.0/-989.2
+https://www.mapbox.com/blog/building-mapbox-fast-map-hosting-stack/
