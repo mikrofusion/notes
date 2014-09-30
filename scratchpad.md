@@ -1614,3 +1614,5 @@ http://strongloop.com/strongblog/compare-express-restify-hapi-loopback/
 http://cukes.info/
 
 https://github.com/flyerhzm/bullet
+
+i18n - http://en.wikipedia.org/wiki/Internationalization_and_localization
