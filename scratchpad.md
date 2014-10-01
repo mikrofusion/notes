@@ -1616,3 +1616,9 @@ http://cukes.info/
 https://github.com/flyerhzm/bullet
 
 i18n - http://en.wikipedia.org/wiki/Internationalization_and_localization
+
+https://github.com/davidcelis/spec-me-maybe
+p
+https://github.com/garybernhardt/base
+
+https://www.robinhood.com/
