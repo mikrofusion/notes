@@ -1622,3 +1622,21 @@ p
 https://github.com/garybernhardt/base
 
 https://www.robinhood.com/
+
+vestigial
+
+before(:all)
+after(:all)
+DatabaseCleaner.clean_with(:truncation)
+
+http://yahoo.github.io/gifshot/demo.html
+
+http://brewhouse.io/blog/2014/09/23/writing-rails-flavored-angularjs.html
+
+
+BLOG
+- the power of pair
+
+- scrummy software development
+
+.http://medium.github.io/matador/
