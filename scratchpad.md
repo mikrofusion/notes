@@ -1640,3 +1640,5 @@ BLOG
 - scrummy software development
 
 .http://medium.github.io/matador/
+
+-legend of scrum
