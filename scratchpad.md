@@ -1642,3 +1642,10 @@ BLOG
 .http://medium.github.io/matador/
 
 -legend of scrum
+
+
+Conway's law is an adage named after computer programmer Melvin Conway, who introduced the idea in 1968; it was first dubbed Conway's law by participants at the 1968 National Symposium on Modular Programming.[1] It states that
+
+organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations
+
+—M. Conway[2]
