@@ -1649,3 +1649,7 @@ Conway's law is an adage named after computer programmer Melvin Conway, who intr
 organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations
 
 —M. Conway[2]
+
+http://www.airpair.com/tutorials
+
+Vim tip: forgot to sudo? use `:w !sudo tee %`. At the next prompt, load the file with L or it'll give the `No write since last change` error
