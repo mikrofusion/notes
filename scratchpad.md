@@ -1653,3 +1653,5 @@ organizations which design systems ... are constrained to produce designs which 
 http://www.airpair.com/tutorials
 
 Vim tip: forgot to sudo? use `:w !sudo tee %`. At the next prompt, load the file with L or it'll give the `No write since last change` error
+
+http://www.evanmiller.org/how-not-to-sort-by-average-rating.html
