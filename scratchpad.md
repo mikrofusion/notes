@@ -1655,3 +1655,23 @@ http://www.airpair.com/tutorials
 Vim tip: forgot to sudo? use `:w !sudo tee %`. At the next prompt, load the file with L or it'll give the `No write since last change` error
 
 http://www.evanmiller.org/how-not-to-sort-by-average-rating.html
+
+command pattern, factory pattern, query pattern, repositoryo
+
+https://developer.apple.com/swift/blog/?id=16
+
+ <p><%= submit_tag "Proceed" %></p>
+paste that in vim and then anywhere in there do
+cst<div>
+(change surrounding tag <any tag>)
+dit => <p></p> (delete inside tag)
+ Wrapping Content
+
+Using the Surround Plugin you can do some seriously epic stuff in terms of wrapping text with markup.
+
+cs"': for the word you’re on, change the surrounding quotes from double to single
+cs'<q>: do the same, but change the single quotes to <q>
+ds": delete the double quotes around something
+ysiw[: surround the current word with brackets
+ysiw<em>: emphasize the current word (it works with text objects!) Want to know what’s crazier about that? It’s dot repeatable!.
+Visual Mode: select anything, and then type S. You’ll be brought to the bottom of the window. Now type in what you want to wrap that with, such as <a href="/images">, and then press enter.
