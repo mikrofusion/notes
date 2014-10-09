@@ -1675,3 +1675,7 @@ ds": delete the double quotes around something
 ysiw[: surround the current word with brackets
 ysiw<em>: emphasize the current word (it works with text objects!) Want to know what’s crazier about that? It’s dot repeatable!.
 Visual Mode: select anything, and then type S. You’ll be brought to the bottom of the window. Now type in what you want to wrap that with, such as <a href="/images">, and then press enter.
+
+https://github.com/karma-runner/karma/issues/376
+
+
