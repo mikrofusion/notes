@@ -1679,3 +1679,5 @@ Visual Mode: select anything, and then type S. You’ll be brought to the bottom
 https://github.com/karma-runner/karma/issues/376
 
 http://braythwayt.com/2014/10/11/javascript-spessore-is-free.html
+
+https://javascriptkicks.com/
