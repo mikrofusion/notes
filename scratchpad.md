@@ -1681,3 +1681,5 @@ https://github.com/karma-runner/karma/issues/376
 http://braythwayt.com/2014/10/11/javascript-spessore-is-free.html
 
 https://javascriptkicks.com/
+
+https://medium.com/@kevin_ashton/how-to-become-internet-famous-for-68-828ed0b249cf
