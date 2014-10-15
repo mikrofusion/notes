@@ -1688,3 +1688,9 @@ bundle show <gem>
 
 bundle open <gem>
 bundle gem pristine <gem>
+
+http://www.evanmiller.org/ranking-items-with-star-ratings.html
+
+And yet when I say "strange loop", I have something else in mind — a less concrete, more elusive notion. What I mean by "strange loop" is — here goes a first stab, anyway — not a physical circuit but an abstract loop in which, in the series of stages that constitute the cycling-around, there is a shift from one level of abstraction (or structure) to another, which feels like an upwards movement in a hierarchy, and yet somehow the successive "upward" shifts turn out to give rise to a closed cycle. That is, despite one's sense of departing ever further from one's origin, one winds up, to one's shock, exactly where one had started out. In short, a strange loop is a paradoxical level-crossing feedback loop. (pp. 101-102)
+
+http://shenlanguage.org/
