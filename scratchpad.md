@@ -1696,3 +1696,7 @@ And yet when I say "strange loop", I have something else in mind — a less conc
 http://shenlanguage.org/
 
 http://www.evanmiller.org/ranking-items-with-star-ratings.html
+
+ca·non·i·cal
+https://github.com/faylang/fay/wiki
+
