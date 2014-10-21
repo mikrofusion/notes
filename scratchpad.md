@@ -1700,3 +1700,4 @@ http://www.evanmiller.org/ranking-items-with-star-ratings.html
 ca·non·i·cal
 https://github.com/faylang/fay/wiki
 
+http://codelikethis.tumblr.com/post/35280704192/comment-like-this
