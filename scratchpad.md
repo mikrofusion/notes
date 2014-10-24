@@ -1705,3 +1705,17 @@ http://codelikethis.tumblr.com/post/35280704192/comment-like-this
 andriod netrunner
 
 http://ionicframework.com/
+
+blogs
+software development practices of aliens
+not all ***** are bad
+we do not manufacture cars (so stop acting like we do)
+
+talks
+-----
+todo mvc angular (from yo to TDD start to finish)
+bacon
+process
+
+ideas
+inverview roulette
