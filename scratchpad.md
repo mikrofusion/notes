@@ -1728,3 +1728,5 @@ https://www.youtube.com/watch?v=VZYKFB26QT4&feature=youtu.be
 
 workflowy
 http://xahlee.info/js/js_Douglas_Crockford_the_better_parts.html
+
+https://github.com/mhinz/vim-startify overarching vim config: https://github.com/mutewinter/dot_vim
