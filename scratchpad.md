@@ -1719,6 +1719,7 @@ process
 
 ideas
 inverview roulette
+cancel my shit
 
 
 http://seuss.wikia.com/wiki/Ish
@@ -1730,3 +1731,4 @@ workflowy
 http://xahlee.info/js/js_Douglas_Crockford_the_better_parts.html
 
 https://github.com/mhinz/vim-startify overarching vim config: https://github.com/mutewinter/dot_vim
+
