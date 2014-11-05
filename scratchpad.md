@@ -1735,3 +1735,4 @@ https://github.com/mhinz/vim-startify overarching vim config: https://github.com
 http://www.laputan.org/mud/
 
 http://www.laputan.org/mud/mud.html#BigBallOfMud
+http://en.wikipedia.org/wiki/Conway's_law
