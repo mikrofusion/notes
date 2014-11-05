@@ -1736,3 +1736,5 @@ http://www.laputan.org/mud/
 
 http://www.laputan.org/mud/mud.html#BigBallOfMud
 http://en.wikipedia.org/wiki/Conway's_law
+
+http://www.seas.upenn.edu/~cis194/
