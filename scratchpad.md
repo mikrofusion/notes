@@ -1738,3 +1738,11 @@ http://www.laputan.org/mud/mud.html#BigBallOfMud
 http://en.wikipedia.org/wiki/Conway's_law
 
 http://www.seas.upenn.edu/~cis194/
+
+change origin git
+$ git remote rm origin
+$ git remote add origin git@github.com:aplikacjainfo/proj1.git
+$ git config master.remote origin
+$ git config master.merge refs/heads/master
+
+http://www.forbes.com/sites/ryanmac/2014/11/06/silk-road-2-blake-benthall-fbi-shutdown/
