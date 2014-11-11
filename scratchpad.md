@@ -1748,3 +1748,7 @@ $ git config master.merge refs/heads/master
 http://www.forbes.com/sites/ryanmac/2014/11/06/silk-road-2-blake-benthall-fbi-shutdown/
 
 https://dev.twitter.com/rest/public/timelines
+
+http://michelpm.com/blog/2013/07/26/switching-from-zsh-to-fish/
+
+http://zsh.sourceforge.net/Intro/intro_16.html
