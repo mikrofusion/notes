@@ -1755,3 +1755,5 @@ http://zsh.sourceforge.net/Intro/intro_16.html
 
 http://appurify.com/
 http://themindunleashed.org/2014/10/6-mind-expanding-movies-will-make-question-reality-life.html
+
+http://www.acoo.net/netrunner-cards-list/
