@@ -1757,3 +1757,6 @@ http://appurify.com/
 http://themindunleashed.org/2014/10/6-mind-expanding-movies-will-make-question-reality-life.html
 
 http://www.acoo.net/netrunner-cards-list/
+https://github.com/lrz/rubymotion-hybrid-sample
+http://www.slideshare.net/LaurentSansonetti/bringing-the-ruby-language-into-the-mobile-world
+
