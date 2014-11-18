@@ -1760,3 +1760,4 @@ http://www.acoo.net/netrunner-cards-list/
 https://github.com/lrz/rubymotion-hybrid-sample
 http://www.slideshare.net/LaurentSansonetti/bringing-the-ruby-language-into-the-mobile-world
 
+http://xkcd.com/204/
