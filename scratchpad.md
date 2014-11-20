@@ -1761,3 +1761,13 @@ https://github.com/lrz/rubymotion-hybrid-sample
 http://www.slideshare.net/LaurentSansonetti/bringing-the-ruby-language-into-the-mobile-world
 
 http://xkcd.com/204/
+
+rdf
+http://blog.datagraph.org/2010/04/rdf-nosql-diff
+
+https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=Conway%27s+Game+of+Life
+
+hstore
+https://github.com/diogob/activerecord-postgres-hstore
+
+http://en.wikipedia.org/wiki/MapReduce
