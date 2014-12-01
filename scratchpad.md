@@ -1771,3 +1771,15 @@ hstore
 https://github.com/diogob/activerecord-postgres-hstore
 
 http://en.wikipedia.org/wiki/MapReduce
+
+
+<script>
+  (function() {
+    var globals = <%= js_variables.to_json.html_safe %>;
+    for (var key in globals) {
+      if (globals.hasOwnProperty(key)) {
+        window[key] = globals[key];
+      }
+    }
+  })()
+</script>
