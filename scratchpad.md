@@ -1798,3 +1798,6 @@ http://www.garbled.net/clusterit.html
 http://map.ipviking.com/
 
 http://codex.wordpress.org/Installing_WordPress_Locally_on_Your_Mac_With_MAMP
+
+ActiveRecord::Base.logger.level = 1
+k
