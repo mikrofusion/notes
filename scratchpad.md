@@ -1804,3 +1804,9 @@ k
 http://madebydna.com/all/code/2011/06/24/eigenclasses-demystified.html
 
 https://ngrok.com/
+
+vim ctags
+---------
+http://andrew.stwrt.ca/posts/vim-ctags
+http://stackoverflow.com/questions/563616/vim-and-ctags-tips-and-tricks
+https://github.com/tpope/gem-ctags
