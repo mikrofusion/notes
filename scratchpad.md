@@ -1810,3 +1810,5 @@ vim ctags
 http://andrew.stwrt.ca/posts/vim-ctags
 http://stackoverflow.com/questions/563616/vim-and-ctags-tips-and-tricks
 https://github.com/tpope/gem-ctags
+
+http://thumbsandammo.blogspot.com/
