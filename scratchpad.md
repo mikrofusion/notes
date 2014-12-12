@@ -1812,3 +1812,6 @@ http://stackoverflow.com/questions/563616/vim-and-ctags-tips-and-tricks
 https://github.com/tpope/gem-ctags
 
 http://thumbsandammo.blogspot.com/
+
+angular meeting minutes
+https://drive.google.com/#folders/0BxgtL8yFJbacMEZDc2NtWS1VZ1k
