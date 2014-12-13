@@ -1815,3 +1815,7 @@ http://thumbsandammo.blogspot.com/
 
 angular meeting minutes
 https://drive.google.com/#folders/0BxgtL8yFJbacMEZDc2NtWS1VZ1k
+
+
+jscs error when no jscsrc
+-------------
