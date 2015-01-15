@@ -1819,3 +1819,14 @@ https://drive.google.com/#folders/0BxgtL8yFJbacMEZDc2NtWS1VZ1k
 
 jscs error when no jscsrc
 -------------
+
+tanuki balls
+
+http://vimeo.com/105379431
+https://www.joyent.com/developers/node
+https://blog.heroku.com/archives/2014/3/11/node-habits
+http://blog.carbonfive.com/2014/06/02/node-js-in-production/
+http://nodejs.org/api/cluster.html
+
+bunyan
+dtrace
