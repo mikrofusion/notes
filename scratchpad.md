@@ -1830,3 +1830,9 @@ http://nodejs.org/api/cluster.html
 
 bunyan
 dtrace
+
+----------------------------------------------
+deploying with circle
+splitting your app
+
+http://passingcuriosity.com/2013/dnsmasq-dev-osx/
